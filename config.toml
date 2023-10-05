@@ -1,0 +1,4 @@
+baseURL = 'https://martin.gasque.fr/'
+languageCode = 'fr-fr'
+title = 'Martin Gasque'
+theme = 'liftoff'
