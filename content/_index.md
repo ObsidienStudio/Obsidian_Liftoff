@@ -10,5 +10,5 @@ posts_section_heading: Derniers articles
 projects_section_heading: Les projets
 ---
 
-{{< recent-posts 5 >}}
+<!-- {{< recent-posts 5 >}} -->
 {{< projets 5 >}}

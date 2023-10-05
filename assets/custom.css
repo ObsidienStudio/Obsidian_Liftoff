@@ -12,3 +12,18 @@
 .single-feature-img img{
     margin: auto;
 }
+
+.caroussel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    width: 100%;
+    margin: auto;
+}
+
+.caroussel-img{
+    height: 250px;
+    width: 500px;
+    margin: 0 10px;
+}

@@ -1,89 +1,506 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="fr-FR"><head>
+	<meta name="generator" content="Hugo 0.119.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+<link rel="stylesheet" href="https://meridian-corp.firebaseapp.com/main.min.css" />
+
+
+  
+<meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+
+<title>Meridian Corp</title>
+
+
+<meta name="author" content="Meridian Corp">
+
+<meta name="description" content="Site de la Meridian Corp.">
+<link rel="canonical" href="https://meridian-corp.firebaseapp.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meridian Corp">
+<meta property="og:description" content="Site de la Meridian Corp.">
+<meta property="og:url" content="https://meridian-corp.firebaseapp.com/">
+<meta property="og:updated_time" content="2023-10-05T12:46:55+02:00">
+  
+
+
+  <meta name="og:image" content="https://meridian-corp.firebaseapp.com/images/default.png"/>
+
+
+
+
+
+
+  <meta name="twitter:site" content="corp_meridian">
+
+
+  <meta name="twitter:creator" content="corp_meridian">
+
+<meta name="twitter:title" content="Meridian Corp">
+<meta name="twitter:description" content="Site de la Meridian Corp.">
+
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://meridian-corp.firebaseapp.com/images/default.png"/>
+
+
+<link rel="alternate" type="application/rss+xml" href="https://meridian-corp.firebaseapp.com/index.xml" title="Meridian Corp">
+
+
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://meridian-corp.firebaseapp.com/#/schema/person/1",
+      "name": "Martin Gasque",
+      "url": "https://meridian-corp.firebaseapp.com/",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://meridian-corp.firebaseapp.com/#/schema/image/1",
+        "url": "https://meridian-corp.firebaseapp.com/images/default.png",
+        "width": 453 ,
+        "height": 455 ,
+        "caption": "Martin Gasque"
       }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://meridian-corp.firebaseapp.com/#/schema/website/1",
+      "url": "https://meridian-corp.firebaseapp.com/",
+      "name": "Meridian Corp",
+      "description": "Site de la Meridian Corp.",
+      "publisher": {
+        "@id": "https://meridian-corp.firebaseapp.com/#/schema/person/1"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://meridian-corp.firebaseapp.com/",
+      "url": "https://meridian-corp.firebaseapp.com/",
+      "name": "Meridian Corp",
+      "description": "Site de la Meridian Corp.",
+      "isPartOf": {
+        "@id": "https://meridian-corp.firebaseapp.com/#/schema/website/1"
+      },
+      "about": {
+        "@id": "https://meridian-corp.firebaseapp.com/#/schema/person/1"
+      },
+      "datePublished": "2023-10-05T12:46:55+02:00",
+      "dateModified": "2023-10-05T12:46:55+02:00",
+      "breadcrumb": {
+        "@id": "https://meridian-corp.firebaseapp.com/#/schema/breadcrumb/1"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://meridian-corp.firebaseapp.com/#/schema/image/2"
+      },
+      "inLanguage": "fr-fr",
+      "potentialAction": [{
+        "@type": "ReadAction", "target": ["https://meridian-corp.firebaseapp.com/"]
+      }]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://meridian-corp.firebaseapp.com/#/schema/breadcrumb/1",
+      "name": "Breadcrumbs",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@id": "https://meridian-corp.firebaseapp.com"
+          }
+        }]
+    },
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ImageObject",
+          "@id": "https://meridian-corp.firebaseapp.com/#/schema/image/2",
+          "url": "https://meridian-corp.firebaseapp.com/images/default.png",
+          "contentUrl": "https://meridian-corp.firebaseapp.com/images/default.png",
+          "caption": "Meridian Corp"
         }
-      });
-    </script>
-  </body>
+      ]
+    }
+  ]
+}
+</script>
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  
+
+</head><body>
+    <header class="container">
+  <nav class="main-nav" id="js-navbar">
+    <div>
+      <a class="logo" href="https://meridian-corp.firebaseapp.com">Meridian Corp</a>
+    <div class="logo-bar"></div>
+    
+  </div>
+  <ul class="menu" id="js-menu">
+      
+      
+      
+        <li class="menu-item">
+          <a href="/projets/" class="menu-link">Travaux</a>
+        </li>
+      
+      
+      
+      <li class="menu-item">
+        <span class="menu-link">Blog<span class="drop-icon">▾</span></span>
+        <ul class="sub-menu">
+          
+            <li class="menu-item">
+              <a href="/posts/" class="menu-link">Tout les articles</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/subsection/" class="menu-link">Sous-sections</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/tags/" class="menu-link">Tags</a>                  
+            </li>
+          
+        </ul>
+      </li>
+      
+      
+      
+        <li class="menu-item">
+          <a href="/contact/" class="menu-link">Contact</a>
+        </li>
+      
+      
+      
+        <li class="menu-item">
+          <a href="/about/" class="menu-link">A propos de nous</a>
+        </li>
+      
+      
+      <li class="menu-item--align">
+        <div class="switch">
+          <input class="switch-input" type="checkbox" id="themeSwitch">
+          <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
+          <div aria-hidden="true" class="switch-marker"></div>
+        </div>
+      </li>
+    </ul>
+    <span class="nav-toggle" id="js-navbar-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="30" height="30" fill="var(--color-contrast-high)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+    </span>
+  </nav>
+</header><main class="section">
+<div class="container">
+  <section class="section hero">
+    <div class="hero-info">
+      <h1 class="hero-title">Meridian Corp</h1>
+      
+        <p class="hero-subtitle">Nous sommes un collectif de jeunes créateurs de contenu</p>
+      
+      <div class="btn-group">
+        
+        
+          
+        
+        
+        
+          
+        
+        <a class="btn-primary"
+           href="/about">
+           À propos de nous
+        </a>
+        <a class="btn-secondary"
+           href="/projets">
+           Projets
+        </a>
+      </div>
+    </div>
+    <div class="hero-owner">
+      
+      
+      
+      
+        
+      
+      
+      <img class="hero-avatar"
+            src="/Meridian_Logo_2bis.png"
+            width="512" height="512"
+            alt="Headshot or avatar belonging to the website owner"/>
+      
+    </div>
+  </section>
+  
+  <section>
+    <h4>Les screen de l'équipe</h4>
+<div class="carousel">
+    
+    
+    <img class="caroussel-img" src="screenshots/gartic1.png">
+   
+    <img class="caroussel-img" src="screenshots/panda200.png">
+   
+  </div>
+  </section>
+  <!-- raw HTML omitted -->
+<section class="section">
+  <div class="home-title-dropdown">
+    <h2 class="home-section-title">Les projets</h2>
+    <a class="see-more-projects" href="/projets/">Tout voir &raquo;</a>
+  </div>
+  
+  
+  
+  
+    <div class="project-list">
+        <div class="project-entry">
+  <div class="project-entry-img">
+    
+
+
+
+  
+
+
+<img class="feature-image" 
+     srcset="/projets/meridian-corp/Meridian_Logo_2bis.png 480w, /projets/meridian-corp/Meridian_Logo_2bis.png 800w"
+     sizes="(max-width: 600px) 480px, 800px"
+     src="/projets/meridian-corp/Meridian_Logo_2bis.png"
+     alt="Feature image">
+
+    
+  </div>
+  <div class="project-entry-info">
+    <h3 class="project-entry-title">
+      <a href="https://meridian-corp.firebaseapp.com/projets/meridian-corp/">Meridian Corp</a>
+      <sup></sup>
+    </h3>
+    <div class="project-list-meta">
+      
+      
+        <span>Discord</span>
+      
+      
+    </div>
+    <p class="project-list-summary">Meridian Corp est un projet de développement de communauté</p>
+    
+  </div>
+</div>
+      
+        <div class="project-entry">
+  <div class="project-entry-img">
+    
+
+
+
+  
+
+
+<img class="feature-image" 
+     srcset="/projets/hanzo-vg/website.jpg 480w, /projets/hanzo-vg/website.jpg 800w"
+     sizes="(max-width: 600px) 480px, 800px"
+     src="/projets/hanzo-vg/website.jpg"
+     alt="Website">
+
+    
+    <div class="project-entry-type">
+      
+        <a href="https://meridian-corp.firebaseapp.com/project-types/personal/">Personal</a>
+      
+    </div>
+    
+  </div>
+  <div class="project-entry-info">
+    <h3 class="project-entry-title">
+      <a href="https://meridian-corp.firebaseapp.com/projets/hanzo-vg/">Hanzo - Le jeu vidéo</a>
+      <sup></sup>
+    </h3>
+    <div class="project-list-meta">
+      
+      
+        <span>C#</span>
+      
+        <span>Piskels</span>
+      
+        <span>Unreal Engine</span>
+      
+      
+    </div>
+    <p class="project-list-summary">Hanzo - Le jeu vidéo est l&#39;adaptation du jeu de rôle en jeu vidéo</p>
+    
+  </div>
+</div>
+      
+        <div class="project-entry">
+  <div class="project-entry-img">
+    
+
+
+
+  
+
+
+<img class="feature-image" 
+     srcset="/projets/hanzo/hanzo_wallpaper.jpg 480w, /projets/hanzo/hanzo_wallpaper.jpg 800w"
+     sizes="(max-width: 600px) 480px, 800px"
+     src="/projets/hanzo/hanzo_wallpaper.jpg"
+     alt="hanzo_wallpaper.jpg">
+
+    
+    <div class="project-entry-type">
+      
+        <a href="https://meridian-corp.firebaseapp.com/project-types/personal/">Personal</a>
+      
+    </div>
+    
+  </div>
+  <div class="project-entry-info">
+    <h3 class="project-entry-title">
+      <a href="https://meridian-corp.firebaseapp.com/projets/hanzo/">Hanzo</a>
+      <sup></sup>
+    </h3>
+    <div class="project-list-meta">
+      
+      
+        <span>Foundry</span>
+      
+        <span>Dungeondraft</span>
+      
+        <span>Dnd5e</span>
+      
+      
+    </div>
+    <p class="project-list-summary">Hanzo est mon premier projet de jeu de rôle sérieux.</p>
+    
+  </div>
+</div>
+      
+    </div>
+  
+</section>
+
+</div>
+
+    </main><footer>
+  
+  <div class="section footer">
+    <p class="footer-copyright">&copy; 2023 &middot; 
+      <a href="https://meridian-corp.firebaseapp.com">Meridian Corp</a>
+      
+        <span>&middot; Crée avec <a href="https://github.com/wjh18/hugo-liftoff" target="_blank" rel="noopener">Hugo Liftoff</a> theme.</span>
+      
+    </p>
+    
+      <div class="footer-socials">
+        
+<div class="social-links">
+  <ul class="social-icons">
+    
+    
+    <li>
+      <a href="https://twitter.com/corp_meridian" target="_blank" rel="noopener" aria-label="Visit Twitter profile" class="social-btn twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-twitter" width="24" height="24" viewBox="0 0 384 312" fill="var(--color-primary)"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+      </a>
+    </li>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <li>
+      <a href="mailto:?to=MeridianCorpTV%40gmail.com" target="_blank" class="social-btn email">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-mail" width="24" height="24" viewBox="0 0 416 288" fill="var(--color-primary)"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+      </div>
+    
+  </div>
+</footer>
+
+  
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+  
+  
+    
+
+<script src="https://meridian-corp.firebaseapp.com/main.min.js"></script>
+
+
+
+  
+</body>
 </html>

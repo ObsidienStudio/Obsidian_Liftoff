@@ -1,8 +1,7 @@
 ---
 type: contact
-title: Get in Touch
+title: Ce martien essaie de communiquer...
 seo_title: Contact
-description: Send me a message to provide feedback about the site, my writing, or anything else on your mind.
+description: Envoyez nous un mail ! On le lira avec grande attention.
 ---
 
-Get in touch to leave feedback or just say hello.

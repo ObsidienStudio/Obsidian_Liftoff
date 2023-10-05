@@ -1,4 +1,4 @@
-baseURL = 'https://martin.gasque.fr/'
+baseURL = 'https://meridian-corp.web.app'
 languageCode = 'fr-fr'
-title = 'Meridian editions'
+title = 'Meridian Corp'
 theme = 'liftoff'
