@@ -17,7 +17,7 @@
     name = "Tout les articles"
     url = "/posts/"
     parent = "blog"
-    weight = 3
+    weight = 2
 
 [[main]]
     identifier = "subsection"
@@ -32,7 +32,7 @@
     name = "Tags"
     url = "/tags/"
     parent = "blog"
-    weight = 3
+    weight = 4
 
 [[main]]
     identifier = "contact"

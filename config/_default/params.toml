@@ -5,19 +5,19 @@ disallow_search_engines = false # Disallow search engine crawling in robots.txt
 
 ### Content
 favicon = true # Enable favicon, add your favicon files to /static/ directory
-# avatar = 'avatar.png' # Custom avatar image in /assets/
-grayscale_avatar = true # Add a grayscale filter to the avatar image
-author = 'John Doe' # Default author for <head> meta
-description = "Personal blog and portfolio site of John Doe." # Add a global meta description to <head>
-footer_text = "Built with [Hugo Liftoff](https://github.com/wjh18/hugo-liftoff) theme." # Customize footer text
-fallback_text = "No content available yet. Coming soon." # Fallback text for empty content
+avatar = 'avatar.png' # Custom avatar image in /assets/
+grayscale_avatar = false # Add a grayscale filter to the avatar image
+author = 'Martin Gasque' # Default author for <head> meta
+description = "Blog personnel et portfolio de Martin Gasque." # Add a global meta description to <head>
+footer_text = "Crée avec [Hugo Liftoff](https://github.com/wjh18/hugo-liftoff) theme." # Customize footer text
+fallback_text = "Il n'y a rien ici, revenez plus tard! " # Fallback text for empty content
 label_drafts = true # Add a label indicator next to the title of any built drafts (dev only)
 
 # Customize newsletter text
-newsletter_header = "This is my custom newsletter header with a captivating title."
-newsletter_description = "This is my custom newsletter description that tells you why you should sign up."
-newsletter_submit = "Join now"
-global_newsletter = true # Enable newsletter site-wide
+newsletter_header = "Ma newsletter pour être au courant rapidement"
+newsletter_description = "Inscrivez-vous et recevez les nouvelles du blog directement sur votre boite mail !"
+newsletter_submit = "Rejoindre"
+global_newsletter = false # Enable newsletter site-wide
 
 # CSS / JavaScript
 enable_postcss = false # Enable if you're using npm and want to utilize PostCSS processing
@@ -30,12 +30,12 @@ images = ['images/default.png'] # Fallback for Open Graph and Twitter Cards imag
 ogLocale = "en_US" # Open graph locale
 
 # Twitter Cards
-twitterSite = "johndoestwitter" # Enter your twitter handle without the @
-twitterCreator = "johndoestwitter" # Enter your twitter handle without the @
+twitterSite = "corp_meridian" # Enter your twitter handle without the @
+twitterCreator = "corp_meridian" # Enter your twitter handle without the @
 
 # JSON-LD structured data schemas
-schemaName = "John Doe" # Enter your name
-schemaLocale = "en-US" # Structured data locale
+schemaName = "Martin Gasque" # Enter your name
+schemaLocale = "fr-fr" # Structured data locale
 schemaImage = "images/default.png" # Image for Person structured data schema. Enter path to the image.
 schemaImageWidth = 453 # Width of the above image
 schemaImageHeight = 455 # Height of the above image
@@ -43,23 +43,23 @@ schemaImageHeight = 455 # Height of the above image
 ### Social
 # Show social links in footer, home hero section, or about page
 footer_socials = true
-home_hero_socials = true
+home_hero_socials = false
 about_page_socials = true
 
 # Enable or disable individual social icons
 [social.links]
-  twitter = "username"
-  github = "username"
-  stack_overflow = "userid/username" # include user id
-  email = "user@example.com"
+  twitter = "corp_meridian"
+  # github = "username"
+  # stack_overflow = "userid/username" # include user id
+  email = "obsidiandice80@gmail.com"
   # linkedin = "username" # Comment out to disable
   # mastodon_server = "example.social" # include subdomains if relevant, scheme not needed (defaults to https)
   # mastodon_user = "username" # don't include preceding @
 
 # Enable or disable individual social share icons in posts
 [social.share]
-  facebook = true
-  linkedin = true
+  facebook = false
+  linkedin = false
   twitter = true
-  reddit = true
+  reddit = false
   email = true
