@@ -1,8 +1,8 @@
 ### General
-baseURL = 'https://www.example.com/' # Enter your full production URL
-languageCode = 'en-us' # Default
-timeZone = 'America/New_York' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-title = 'Example Site' # Site title used throughout site
+baseURL = 'https://www.martin.gasque.fr/' # Enter your full production URL
+languageCode = 'fr-FR' # Default
+timeZone = 'Europe/Paris' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+title = 'Martin Gasque' # Site title used throughout site
 
 ### SEO, Analytics & 3rd-party
 enableRobotsTXT = true # To overwrite the theme's robots.txt, add your own in the /layouts/ directory
@@ -41,11 +41,11 @@ disableHugoGeneratorInject = false # Default
 disableLiveReload = false # Default
 
 # Use this theme as git submodule
-theme = 'hugo-liftoff'
+theme = 'liftoff'
 # Or, use this theme as hugo module
 # [module]
 # [[module.imports]]
-#     path = 'hugo-liftoff'
+#     path = 'liftoff'
 
 [taxonomies]
     tag = 'tags'
