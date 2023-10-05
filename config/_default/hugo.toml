@@ -2,7 +2,7 @@
 baseURL = 'https://www.martin.gasque.fr/' # Enter your full production URL
 languageCode = 'fr-FR' # Default
 timeZone = 'Europe/Paris' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-title = 'Martin Gasque' # Site title used throughout site
+title = 'Meridian Corp' # Site title used throughout site
 
 ### SEO, Analytics & 3rd-party
 enableRobotsTXT = true # To overwrite the theme's robots.txt, add your own in the /layouts/ directory

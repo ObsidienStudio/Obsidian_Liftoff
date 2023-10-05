@@ -1,7 +1,7 @@
 ---
-title: Martin Gasque
-subtitle: A la création de mon jeu de rôle, je met en place ce site pour en parler
-seo_title: Obsidian Glass
+title: Meridian Corp
+subtitle: Nous sommes un collectif de jeunes créateurs de contenu
+seo_title: Meridian Corp
 
 primary_cta_page: "about"
 secondary_cta_page: "projets"

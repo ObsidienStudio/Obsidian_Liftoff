@@ -22,8 +22,8 @@ techstack:
     - Foundry
     - Dungeondraft
     - Dnd5e
-live_url: https://martin.gasque.fr/hanzo
-source_url: https://martin.gasque.fr/hanzo
+live_url:
+source_url:
 ---
 
 Cette article vise à vous donner des détails sur le projet Hanzo et sa création

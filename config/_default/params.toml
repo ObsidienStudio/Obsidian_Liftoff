@@ -5,10 +5,10 @@ disallow_search_engines = false # Disallow search engine crawling in robots.txt
 
 ### Content
 favicon = true # Enable favicon, add your favicon files to /static/ directory
-avatar = 'avatar.png' # Custom avatar image in /assets/
+avatar = 'Meridian_Logo_2bis.png' # Custom avatar image in /assets/
 grayscale_avatar = false # Add a grayscale filter to the avatar image
-author = 'Martin Gasque' # Default author for <head> meta
-description = "Blog personnel et portfolio de Martin Gasque." # Add a global meta description to <head>
+author = 'Meridian Corp' # Default author for <head> meta
+description = "Site de la Meridian Corp." # Add a global meta description to <head>
 footer_text = "Crée avec [Hugo Liftoff](https://github.com/wjh18/hugo-liftoff) theme." # Customize footer text
 fallback_text = "Il n'y a rien ici, revenez plus tard! " # Fallback text for empty content
 label_drafts = true # Add a label indicator next to the title of any built drafts (dev only)
@@ -51,7 +51,7 @@ about_page_socials = true
   twitter = "corp_meridian"
   # github = "username"
   # stack_overflow = "userid/username" # include user id
-  email = "obsidiandice80@gmail.com"
+  email = "MeridianCorpTV@gmail.com"
   # linkedin = "username" # Comment out to disable
   # mastodon_server = "example.social" # include subdomains if relevant, scheme not needed (defaults to https)
   # mastodon_user = "username" # don't include preceding @

@@ -1,7 +1,11 @@
 <header class="container">
   <nav class="main-nav" id="js-navbar">
-    <a class="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    <ul class="menu" id="js-menu">
+    <div>
+      <a class="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <div class="logo-bar"></div>
+    
+  </div>
+  <ul class="menu" id="js-menu">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
       {{ if .HasChildren }}

@@ -1,1 +1,14 @@
 /* Add custom CSS */
+
+#js-navbar .logo{
+    font-size: xx-large;
+}
+#js-navbar .logo-bar{
+    width: 100%;
+    height: 1px;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.single-feature-img img{
+    margin: auto;
+}

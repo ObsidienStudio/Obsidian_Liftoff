@@ -12,8 +12,8 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: meme1.png
-feature_image_alt: meme1.png
+feature_image: 
+feature_image_alt: 
 
 categories:
 tags:
@@ -28,9 +28,13 @@ disable_comments: false
 
 ## Bienvenue
 
-Bonjour à tous et bienvenue sur le site de Martin Gasque (mon site)
+Bonjour à tous et bienvenue sur le site de la Meridian Corp
 
-Ce site est dédié à l'archivage de mes projets et a la réadaction d'articles sur des sujets que je trouve pertinents
-N'ayant pas la prétention d'être assez instruit pour débattre de tout, je me contenterai de mon domaine qui est le jeu.
+Ce site est dédié à l'archivage des projets et a la réadaction d'articles sur des sujets que notre équipe trouve pertinents
+N'ayant pas la prétention d'être assez instruit pour débattre de tout, nous nous contenterons de notre domaine qui est le jeu-vidéo.
 
-Je m'efforcerais également de garder mes projets organisés et de mettre sur ce site les mise à jours que l'on pourrait voir sur ces derniers.
+On espère que vous serez content de retrouver les dernières info du groupe sur ce site, et que vous prendrez plaisir a lire notre rédaction qui, ne devant rien a personne, pourra s'exprimer librement
+
+Bien à vous
+
+Obsidian Glover

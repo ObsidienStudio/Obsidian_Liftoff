@@ -1,21 +1,20 @@
 ---
 type: about
-linktitle: À propos de moi
-title: Je vous salue voyageurs !
+linktitle: À propos de nous
+title: Salutations voyageurs !
 seo_title: À propos
-description: Qui est ce mystérieux personnage ? Voyons cela tout de suite...
+description: Qui sont ces mystérieux personnages ? Voyons cela tout de suite...
 ---
 
-You can customize the about page heading and disable social links if desired. The rest of the content can be added with markdown. Please see [Github](https://github.com/wjh18/hugo-liftoff) for a full list of features and documentation.
+La Meridian Corp est une communauté de streameurs, monteurs, communiquants et game-designer mais avant tout de joueurs qui se sont rencontrés par le jeu et qui ont fondé une communautée qu'il est possible a tous de rejoindre
 
-## Who am I?
+Sur cette base nous recrutons de jeux en jeux des membres de guilde, de compagnie ou d'escouade qui semblent avoir leur place chez nous et qui en cherche une quelque part
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce sem augue, tristique luctus lobortis nec, cursus eu erat. Proin dictum vel enim a vestibulum.
+Au delà, nous sommes quelques créateurs qui recherchons quotidiennement comment animer et faire exister cette communautée.
+Cela passe par la création de serveurs pour les divers jeux multijoueurs, par des sessions de conseils si besoin, que ce soit pour passer diamant sur League of Legends ou pour dépanner son ordinateur un jour de galère.
 
-## My Experience
+Rejoignez-nous et voyons tous ensemble comment créer des événements qui nous ressemblent.
 
-Integer est purus, aliquam ac enim aliquet, viverra sodales mauris. Integer neque sapien, fermentum sit amet augue in, vulputate pellentesque turpis. Quisque eget blandit turpis, in semper lectus.
-
-## Learn More
-
-You can also link to [other pages]({{< ref "contact" >}}) in your markdown.
+Nous avons une équipe qui est à l'attention quotidienne des évenements : 
+- Obsidian Glover / Martin Gasque qui a créer ce site
+- Veko / Yanis xx Le limougeaud qui vous veut du bien
