@@ -4,7 +4,7 @@
       {{- with $.Page.Params.posts_section_heading -}}
         {{- . -}}
       {{- else -}}
-        Recent Posts
+        Derniers articles
       {{- end -}}
     </h2>
     <select name="choice" id="select-posts">
@@ -30,5 +30,5 @@
   {{ else }}
     {{ partial "general/fallback-text.html" . }}
   {{ end }}
-  <a class="btn-secondary see-more" href="{{ "posts/" | relURL }}">More Posts</a>
+  <a class="btn-secondary see-more" href="{{ "posts/" | relURL }}">Plus d'articles</a>
 </section>

@@ -4,10 +4,10 @@
       {{- with $.Page.Params.projects_section_heading -}}
         {{- . -}}
       {{- else -}}
-        My Projects
+        Les projets
       {{- end -}}
     </h2>
-    <a class="see-more-projects" href="{{ "projects/" | relURL }}">View all &raquo;</a>
+    <a class="see-more-projects" href="{{ "projects/" | relURL }}">Tout voir &raquo;</a>
   </div>
   {{ $num := .Get 0 }}
   {{ if not $num }}
