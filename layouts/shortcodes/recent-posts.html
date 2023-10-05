@@ -9,7 +9,7 @@
     </h2>
     <select name="choice" id="select-posts">
       {{ range (where site.Sections "Section" "posts") }}
-      <option value="all-{{ .Name | lower }}" selected>All {{ .Name | lower }}</option>
+      <option value="all-{{ .Name | lower }}" selected> {{ .Name }}</option>
       {{ range .Sections }}
       {{ if .CurrentSection.Pages }}
       <option value="{{ replace .CurrentSection.RelPermalink "/" "" | lower }}">{{ .CurrentSection.Name }}</option>

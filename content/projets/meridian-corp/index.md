@@ -1,18 +1,18 @@
 ---
-title: Portfolio Project 3
-seo_title: Portfolio Project 3
-summary: Portfolio Project 3 is my third portfolio project.
-description: Portfolio Project 3 is my third portfolio project.
-slug: portfolio-project-3
-author: John Doe
+title: Meridian Corp
+seo_title: Meridian Corp
+summary: Meridian Corp est un projet de développement de communauté
+description: Meridian Corp est un projet de communauté en développement
+slug: meridian-corp
+author: Martin Gasque
 
 draft: false
-date: 2023-02-20T03:52:30-05:00
+date: 2023-07-20T03:52:30-05:00
 lastmod: 
 expiryDate: 
 publishDate: 
 
-feature_image: 
+feature_image: Meridian_Logo_Minecraft.png
 feature_image_alt: 
 
 project types: 

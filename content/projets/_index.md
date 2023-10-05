@@ -1,5 +1,5 @@
 ---
 title: Projets
-summary: Tell visitors about your projects by customizing this text.
-description: Explore some of the projects I've worked on.
+summary: Créateur de jeux depuis quelques années déjà, je vous présente mes créations.
+description: Explore les travaux sur lesquels j'ai travaillé.
 ---

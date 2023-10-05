@@ -1,13 +1,13 @@
 ---
-title: Portfolio Project 2
-seo_title: Portfolio Project 2
-summary: Portfolio Project 2 is my second portfolio project.
-description: Portfolio Project 2 is my second portfolio project.
-slug: portfolio-project-2
+title: Hanzo - Le jeu vidéo
+seo_title: Hanzo - Le jeu vidéo
+summary: Hanzo - Le jeu vidéo est l'adaptation du jeu de rôle en jeu vidéo
+description: Hanzo - Le jeu vidéo est l'adaptation du jeu de rôle en jeu vidéo
+slug: hanzo-vg
 author: John Doe
 
 draft: false
-date: 2020-02-20T03:52:30-05:00
+date: 2023-02-20T03:52:30-05:00
 lastmod: 
 expiryDate: 
 publishDate: 
@@ -19,10 +19,9 @@ project types:
     - Personal
 
 techstack:
-    - Hugo
-    - HTML/CSS
-    - JavaScript
-    - Netlify
+    - C#
+    - Piskels
+    - Unreal Engine
 live_url: https://hugo-liftoff.netlify.app
 source_url: https://github.com/wjh18/hugo-liftoff
 ---
