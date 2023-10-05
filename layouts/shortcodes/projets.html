@@ -13,11 +13,11 @@
   {{ if not $num }}
     {{ $num = 6 }}
   {{ end }}
-  {{ $projects := where site.RegularPages "Section" "projects" | first $num }}
+  {{ $projects := where site.RegularPages "Section" "projets" | first $num }}
   {{ with $projects }}
     <div class="project-list">
       {{- range . }}
-        {{ partial "projects/project-entry.html" . }}
+        {{ partial "projets/project-entry.html" . }}
       {{ end }}
     </div>
   {{ else }}

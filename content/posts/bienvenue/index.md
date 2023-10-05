@@ -12,8 +12,8 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: 
-feature_image_alt: 
+feature_image: meme1.png
+feature_image_alt: meme1.png
 
 categories:
 tags:
