@@ -1,9 +1,9 @@
 ---
 type: about
-linktitle: About
-title: Hi, my name is Hugo.
-seo_title: About
-description: Learn more about my background and experience.
+linktitle: À propos de moi
+title: Je vous salue voyageurs !
+seo_title: À propos
+description: Qui est ce mystérieux personnage ? Voyons cela tout de suite...
 ---
 
 You can customize the about page heading and disable social links if desired. The rest of the content can be added with markdown. Please see [Github](https://github.com/wjh18/hugo-liftoff) for a full list of features and documentation.

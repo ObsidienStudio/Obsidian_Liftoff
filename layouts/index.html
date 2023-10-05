@@ -17,11 +17,11 @@
         {{ end }}
         <a class="btn-primary"
            href="{{ with $p_cta }}{{ . | relURL }}{{ else }}{{ "about" | relURL }}{{ end }}">
-           {{ if $p_cta }}{{ with .Site.GetPage $p_cta }}{{ .LinkTitle }}{{ end }}{{ else }}About{{ end }}
+           {{ if $p_cta }}{{ with .Site.GetPage $p_cta }}{{ .LinkTitle }}{{ end }}{{ else }}À propos{{ end }}
         </a>
         <a class="btn-secondary"
-           href="{{ with $s_cta }}{{ . | relURL }}{{ else }}{{ "projects" | relURL }}{{ end }}">
-           {{ if $s_cta }}{{ with .Site.GetPage $s_cta }}{{ .LinkTitle }}{{ end }}{{ else }}Projects{{ end }}
+           href="{{ with $s_cta }}{{ . | relURL }}{{ else }}{{ "projets" | relURL }}{{ end }}">
+           {{ if $s_cta }}{{ with .Site.GetPage $s_cta }}{{ .LinkTitle }}{{ end }}{{ else }}Projets{{ end }}
         </a>
       </div>
     </div>
