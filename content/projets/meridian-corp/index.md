@@ -15,7 +15,8 @@ publishDate:
 feature_image: Meridian_Logo_2bis.png
 feature_image_alt: 
 
-project types:
+project_types:
+    - Community
 
 techstack:
     - Discord
@@ -29,3 +30,4 @@ La Meridian Corp c'est un tas de bons gens qui se retrouve quotidiennement (ou p
 
 Malgré notre ambition de pouvoir accueillir n'importe qui dans notre petite secte, on cherche une ambiance familiale et décontractée pour pouvoir rester humains, même quand l'échelle est dépassée :)
 
+{{< discordLink >}}

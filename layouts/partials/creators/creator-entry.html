@@ -1,0 +1,25 @@
+<div class="creator-entry">
+    <div class="creator-entry-img">
+      {{ partial "general/feature-image.html" . }}
+    </div>
+    <div class="creator-entry-info">
+      <h3 class="creator-entry-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <sup>{{ partial "general/label-drafts.html" . }}</sup>
+      </h3>
+      <div class="creator-list-meta">
+        {{ with .Params.techstack }}
+        {{ range . }}
+          <span>{{ . }}</span>
+        {{ end }}
+        {{ end }}
+      </div>
+      <p class="creator-list-summary">
+        {{- with .Params.Summary -}}
+          {{ . }}
+        {{- else -}}
+          {{- .Description -}}
+        {{- end -}}
+      </p>
+    </div>
+  </div>

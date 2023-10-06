@@ -48,11 +48,11 @@
   </section>
   {{/*  Shortcodes from page content  */}}
   <section>
-    <h4>Les screen de l'équipe</h4>
+    <h2>Les screen de l'équipe</h2>
 <div class="carousel">
     {{ $screenshots := (.Site.GetPage "/screenshots").Resources }}
     {{range $screenshots}}
-    <img class="caroussel-img" src="screenshots/{{.}}">
+    <img class="caroussel-img" src="screenshots/{{.}}" href='src="screenshots/{{.}}"'>
    {{end}}
   </div>
   </section>

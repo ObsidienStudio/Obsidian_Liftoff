@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="container">
+  <section class="page-header--c">
+    <h1 class="page-header-title">{{ .Title }}</h1>
+  </section>
+</div>
+<div class="about">
+  {{ if eq .Site.Params.about_page_socials true }}
+  {{ end }}
+  <article class="single-container markdown">
+    
+    <div class="creator-single-img">
+      {{ partial "general/feature-image.html" . }}
+    </div>
+    {{ .Content }}
+  </article>
+  <div class="creator-projects">
+    {{$creatorName := .Title}}
+    {{ range (where .Site.Pages "Section" "projets") }} 
+    {{$currentPage := .}}
+    {{range .Params.project_types}}
+      {{if eq . $creatorName}}
+      {{partial "projets/project-entry.html" $currentPage}}
+      {{ end }} 
+    {{ end }} 
+    {{ end }} 
+  </div>
+</div>
+{{ end }}

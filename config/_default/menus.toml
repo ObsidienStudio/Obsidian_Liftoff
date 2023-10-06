@@ -1,7 +1,7 @@
 [[main]]
     # Top-level menu entry
     identifier = "projets"
-    name = "Travaux"
+    name = "Projets"
     url = "/projets/"
     weight = 1
 
@@ -42,6 +42,6 @@
     
 [[main]]
     identifier = "about"
-    name = "A propos de nous"
+    name = "Nous"
     url = "/about/"
     weight = 5

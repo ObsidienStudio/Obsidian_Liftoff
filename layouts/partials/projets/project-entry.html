@@ -1,10 +1,10 @@
 <div class="project-entry">
   <div class="project-entry-img">
     {{ partial "general/feature-image.html" . }}
-    {{ with .Param "project types" }}
+    {{ with .Param "project_types" }}
     <div class="project-entry-type">
       {{ range first 1 . }}
-        <a href="{{ "project-types" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
+        <a href="{{ "project_types" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
       {{ end }}
     </div>
     {{ end }}

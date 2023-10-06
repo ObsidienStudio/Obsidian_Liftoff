@@ -4,7 +4,7 @@ seo_title: Hanzo
 summary: Hanzo est mon premier projet de jeu de rôle sérieux.
 description: Hanzo est mon premier projet de jeu de rôle sérieux
 slug: hanzo
-author: Martin Gasque
+author: Obsidian
 
 draft: false
 date: 2022-05-10T09:52:30-05:00
@@ -15,8 +15,8 @@ publishDate:
 feature_image: hanzo_wallpaper.jpg
 feature_image_alt: hanzo_wallpaper.jpg
 
-project types: 
-    - Personal
+project_types: 
+    - Obsidian
 
 techstack:
     - Foundry

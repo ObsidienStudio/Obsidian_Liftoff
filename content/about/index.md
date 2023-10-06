@@ -15,6 +15,4 @@ Cela passe par la création de serveurs pour les divers jeux multijoueurs, par d
 
 Rejoignez-nous et voyons tous ensemble comment créer des événements qui nous ressemblent.
 
-Nous avons une équipe qui est à l'attention quotidienne des évenements : 
-- Obsidian Glover / Martin Gasque qui a créer ce site
-- Veko / Yanis xx Le limougeaud qui vous veut du bien
+Nous avons une équipe qui est à l'attention quotidienne des évenements :
