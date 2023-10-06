@@ -53,7 +53,7 @@
   <div class="slide-track">
     {{ $screenshots := (.Site.GetPage "/screenshots").Resources }}
     {{range $screenshots}}
-    <img class="caroussel-img slide" src="screenshots/{{.}}" href='src="screenshots/{{.}}"'>
+    <a href="{{.Permalink}}"><img class="caroussel-img slide" src="screenshots/{{.}}" href='src="screenshots/{{.}}"'></a>
    {{end}}
   </div>
   </div>

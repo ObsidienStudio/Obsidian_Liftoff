@@ -1,6 +1,9 @@
 <div class="post-entry">
+  
   {{$logo := .Resources.Get "logo.png"}}
+  {{if $logo}}
   <img src="{{.Permalink}}/{{$logo}}" alt="">            
+  {{end}}
   <div>           
   <h3 class="post-list-title">
     <a href="{{ .Permalink }}">{{ .Title }}</a>
