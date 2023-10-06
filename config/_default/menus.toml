@@ -7,8 +7,8 @@
 
 [[main]]
     # Top-level menu entry
-    identifier = "blog"
-    name = "Blog"
+    identifier = "content"
+    name = "Contenu"
     url = "/posts/"
     weight = 2
 
@@ -16,22 +16,22 @@
     identifier = "posts"
     name = "Tout les articles"
     url = "/posts/"
-    parent = "blog"
+    parent = "content"
     weight = 2
 
 [[main]]
-    identifier = "subsection"
-    name = "Sous-sections"
-    url = "/subsection/"
+    identifier = "jeux"
+    name = "Nos jeux"
+    url = "/jeux/"
     # url = "/posts/subsection/" # Remove url param from subsection/_index.md frontmatter to use full permalink
-    parent = "blog"
+    parent = "content"
     weight = 3
 
 [[main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    parent = "blog"
+    parent = "content"
     weight = 4
 
 [[main]]

@@ -13,11 +13,22 @@
     margin: auto;
 }
 
-.caroussel{
+
+
+.slider_right:hover{
+    cursor: pointer;    
+    pointer-events: none;
+}
+.slider_left:hover{
+    cursor: pointer;
+        pointer-events: none;
+}
+
+.carousel{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow: hidden;
     width: 100%;
     margin: auto;
 }
@@ -35,7 +46,7 @@
 }
 
 .creator-list{
-    margin: 0 10em;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -113,4 +124,21 @@ a:not(.menu-link):not(.btn-primary):not(.btn-secondary)::before {
     display: flex;
     justify-content: center;
     margin: auto;
+}
+
+
+.creator-projects .project-entry{
+    max-width: 45%;
+}
+
+.post-entry{
+    display: flex;
+    flex-direction: row;
+}
+.post-entry img{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    margin-right: 15px;
+    border-radius: 10px;
 }

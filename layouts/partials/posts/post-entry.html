@@ -1,4 +1,7 @@
-<div class="post-entry">                           
+<div class="post-entry">
+  {{$logo := .Resources.Get "logo.png"}}
+  <img src="{{.Permalink}}/{{$logo}}" alt="">            
+  <div>           
   <h3 class="post-list-title">
     <a href="{{ .Permalink }}">{{ .Title }}</a>
   </h3>  
@@ -20,4 +23,5 @@
       {{- .Description -}}
     {{- end -}}
   </p>
+</div>
 </div>

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="container">
   <section class="page-header--c">
-    <h1 class="page-header-title">{{ .Title }}</h1>
+    <h1 class="page-header-title">{{ .Title | upper }}</h1>
   </section>
 </div>
 <div class="about">
@@ -13,7 +13,7 @@
       {{ partial "general/feature-image.html" . }}
     </div>
     {{ .Content }}
-  </article>
+    
   <div class="creator-projects">
     {{$creatorName := .Title}}
     {{ range (where .Site.Pages "Section" "projets") }} 
@@ -25,5 +25,6 @@
     {{ end }} 
     {{ end }} 
   </div>
+  </article>
 </div>
 {{ end }}

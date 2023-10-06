@@ -49,11 +49,13 @@
   {{/*  Shortcodes from page content  */}}
   <section>
     <h2>Les screen de l'équipe</h2>
-<div class="carousel">
+<div class="slider">
+  <div class="slide-track">
     {{ $screenshots := (.Site.GetPage "/screenshots").Resources }}
     {{range $screenshots}}
-    <img class="caroussel-img" src="screenshots/{{.}}" href='src="screenshots/{{.}}"'>
+    <img class="caroussel-img slide" src="screenshots/{{.}}" href='src="screenshots/{{.}}"'>
    {{end}}
+  </div>
   </div>
   </section>
   {{ .Content }}

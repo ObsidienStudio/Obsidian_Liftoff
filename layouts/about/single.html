@@ -10,12 +10,12 @@
   {{ end }}
   <article class="single-container markdown">
     {{ .Content }}
+    <div class="creator-list">
+    {{ range (where .Site.RegularPages "Section" "createurs") }} 
+    {{partial "creators/creator-entry.html" .}}
+    
+    {{end}}
+    </div>
   </article>
-  <div class="creator-list">
-  {{ range (where .Site.RegularPages "Section" "createurs") }} 
-  {{partial "creators/creator-entry.html" .}}
-  
-  {{end}}
-  </div>
 </div>
 {{ end }}

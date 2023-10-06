@@ -1,5 +1,5 @@
 :root, [data-theme="default"] {
-  --color-primary: rgb(18, 120, 175);
+  --color-primary: black;
   --color-inline-code: hsl(0, 81%, 35%);
   /* color contrasts */
   --color-bg: rgb(248, 248, 248);
@@ -24,7 +24,7 @@
   color: var(--color-contrast-high); }
 
 [data-theme="dark"] {
-  --color-primary: rgb(86, 184, 237);
+  --color-primary: white;
   --color-inline-code: hsl(0, 81%, 70%);
   /* color contrasts */
   --color-bg: rgb(18, 18, 18);
