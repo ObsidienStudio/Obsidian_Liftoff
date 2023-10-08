@@ -30,7 +30,6 @@
 
 {{ $images := $.Resources.ByType "image" -}}
 {{ $feature := $images.GetMatch "*feature*" -}}
-{{ $feature_param := "sample"  }}
 {{ $feature_param := $.Params.feature_image  }}
 {{ $feature_frontmatter := $images.GetMatch $feature_param }}
 {{ if $feature_frontmatter -}}
