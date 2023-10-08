@@ -139,6 +139,6 @@ a:not(.menu-link):not(.btn-primary):not(.btn-secondary)::before {
     height: 100px;
     width: 100px;
     margin: 5px;
-    margin-right: 15px;
+    margin: 0px 7px;
     border-radius: 10px;
 }
