@@ -10,7 +10,7 @@ prose:
     - /public
     - /archetypes
    metadata:
-    content:
+    content/about:
       - name: "seo_title"
         field:
           element: "text"
