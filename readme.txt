@@ -10,15 +10,15 @@ Créer avec Hugo, c'est donc uniquement le dossier public qui contient le site, 
 
 ### Organisation du dossier :
 
-/archetype : ??
-/assets : JS / CSS
-/config : .toml
-/content : .md, contenus qui permettent de créer les pages
-/data : ??
-/layouts : templates html
-/resources : scss et autres fichiers générés
-/static : fichiers accessibles sur tout le site ou pages seules
-/theme : ne pas toucher, modèle du theme avant modifications (Liftoff -> https://github.com/wjh18/hugo-liftoff/wiki)
+/archetype : ??\
+/assets : JS / CSS\
+/config : .toml\
+/content : .md, contenus qui permettent de créer les pages\
+/data : ??\
+/layouts : templates html\
+/resources : scss et autres fichiers générés\
+/static : fichiers accessibles sur tout le site ou pages seules\
+/theme : ne pas toucher, modèle du theme avant modifications (Liftoff -> https://github.com/wjh18/hugo-liftoff/wiki)\
 /public : Site internet static
 
 
