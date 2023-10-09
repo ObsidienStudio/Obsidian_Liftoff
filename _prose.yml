@@ -25,3 +25,7 @@ prose:
       	field:
         	element: "textarea"
             label: "Description"
+      - name : "tags"
+      	field:
+        	element: "multiselect"
+            label: "Tags"
