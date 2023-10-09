@@ -5,28 +5,25 @@ summary: Vous aimez la construction et l'aventure ? Venez sur notre serveur Mine
 description: Vous aimez la construction et l'aventure ? Venez sur notre serveur Minecraft !
 slug: minecraft
 author: Obsidian
-
 draft: false
-date: 2020-11-16T21:21:46-05:00
-lastmod: 
-expiryDate: 
-publishDate: 
-
-feature_image: 
-feature_image_alt: 
-
+date: {}
+lastmod: null
+expiryDate: null
+publishDate: null
+feature_image: null
+feature_image_alt: null
 categories:
   - Jeux
 tags:
   - Multijoueur
   - Craft
-series: 
-
+series: null
 toc: true
 related: true
 social_share: true
 newsletter: true
 disable_comments: false
+published: true
 ---
  Ahh, minecraft...
 
@@ -37,6 +34,7 @@ disable_comments: false
 
 
 
+![tst]({{site.baseurl}}/content/jeux/minecraft/how.png)
 
 
 

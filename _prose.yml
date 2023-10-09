@@ -1,0 +1,197 @@
+prose:
+  rooturl: ''
+  siteurl: 'https://meridian-corp.web.app/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: ''
+  ignore:
+    - firebase.json
+    - .firebaserc
+    - .gitignore
+    - .gitmodules
+    - .hugo_build.lock
+    - /layouts
+    - /themes
+    - /public
+    - /resources
+    - /archetypes
+  metadata:
+    "content/about":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+    "content/posts":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
+      - name: "slug"
+        field:
+          element: "text"
+          label: "Slug"
+      - name: "author"
+        field:
+          element: "multiselect"
+          label: "Auteur"
+          alterable: true
+          options:
+          - name: "Obsidian"
+            value: "obsidian"
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: CURRENT_DATETIME
+      - name: "toc"
+        field:
+          element: "hidden"
+          label: "Toc"
+          value: false
+      - name: "related"
+        field:
+          element: "hidden"
+          label: "Liaison"
+          value: false
+      - name: "social_share"
+        field:
+          element: "hidden"
+          label: "Reseaux"
+          value: false
+      - name: "newsletter"
+        field:
+          element: "hidden"
+          label: "Newsletter"
+          value: false          
+    "content/contact":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"          
+    "content/projets":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
+      - name: "summary"
+        field:
+          element: "text"
+          label: "Sommaire"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: CURRENT_DATETIME
+      - name: "feature_mage"
+        field:
+          element: "text"
+          label: "Nom fichier image"
+      - name: "author"
+        field:
+          element: "select"
+          label: "Auteur"
+          alterable: true
+          options:
+          - name: "Obsidian"
+            value: "obsidian"
+      - name: "project_types"
+        field:
+          element: "multiselect"
+          label: "Catégorie projet"
+          alterable: true
+          options:
+          - name: "Obsidian"
+            value: "obsidian"
+          - name: "Seum"
+            value: "seum"
+          - name: "Veko"
+            value: "veko"
+      - name: "tech_stack"
+        field:
+          element: "multiselect"
+          label: "Technologies"
+          alterable: true
+          options:
+          - name: "Foundry"
+            value: "foundry"
+          - name: "C#"
+            value: "C#"
+          - name: "JS"
+            value: "js"          
+    "content/jeux":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre SEO"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"      
+      - name: "summary"
+        field:
+          element: "text"
+          label: "Sommaire"        
+      - name: "slug"
+        field:
+          element: "text"
+          label: "Slug"       
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: CURRENT_DATETIME
+      - name: "feature_image"
+        field:
+          element: "text"
+          label: "Image presentation"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Catégories"
+          alterable: true
+          options:
+          - name: "MMO"
+            value: "mmo"
+          - name: "RPG"
+            value: "rpg"
+          - name: "FPS"
+            value: "fps"
+          - name: "Strategy Game"
+            value: "strat"          
+    "content/createurs":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre SEO"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"      
+      - name: "summary"
+        field:
+          element: "text"
+          label: "Sommaire"        
+      - name: "slug"
+        field:
+          element: "text"
+          label: "Slug"       
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: CURRENT_DATETIME
+      - name: "feature_image"
+        field:
+          element: "text"
+          label: "Image presentation"
