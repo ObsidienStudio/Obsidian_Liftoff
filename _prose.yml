@@ -5,7 +5,7 @@ prose:
   media: ''
   ignore:
     - firebase.json
-    - .firebasesrc
+    - .firebaserc
     - .gitignore
     - .gitmodules
     - .hugo_build.lock
