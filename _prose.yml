@@ -11,6 +11,11 @@ prose:
     - /themes
     - /archetypes
   metadata:
+    content/about:
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
     content/posts:
       - name: "seo_title"
         field:
