@@ -24,3 +24,12 @@ prose:
         field:
           element: "text"
           label: "Description"
+    "content/posts":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
+      - name: "slug"
+        field:
+          element: "text"
+          label: "Slug"
