@@ -1,0 +1,42 @@
+
+
+prose:
+  rooturl: 'content'
+  siteurl: 'https://meridian-corp.web.app/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'assets/uploads'
+  ignore:
+    - *.md
+    - /layouts
+    - /themes
+    - /archetypes
+    - 
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
+## A New Post
+
+Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
