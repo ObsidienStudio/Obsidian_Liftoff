@@ -128,4 +128,44 @@ prose:
           - name: "C#"
             value: "C#"
           - name: "JS"
-            value: "js"
+            value: "js"          
+    "content/jeux":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre SEO"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"      
+      - name: "summary"
+        field:
+          element: "text"
+          label: "Sommaire"        
+      - name: "slug"
+        field:
+          element: "text"
+          label: "Slug"       
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: CURRENT_DATETIME
+      - name: "feature_image"
+        field:
+          element: "text"
+          label: "Image presentation"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Catégories"
+          alterable: true
+          options:
+          - name: "MMO"
+            value: "mmo"
+          - name: "RPG"
+            value: "rpg"
+          - name: "FPS"
+            value: "fps"
+          - name: "Strategy Game"
+            value: "strat"          
