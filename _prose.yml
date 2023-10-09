@@ -96,9 +96,21 @@ prose:
         field:
           element: "text"
           label: "Nom fichier image"
+      - name: "author"
         field:
           element: "text"
           label: "Auteur"
           options:
           - name: "Obsidian"
             value: "obsidian"
+      - name: "project_types"
+        field:
+          element: "text"
+          label: "Catégorie projet"
+          options:
+          - name: "Obsidian"
+            value: "obsidian"
+          - name: "Seum"
+            value: "seum"
+          - name: "Veko"
+            value: "veko"
