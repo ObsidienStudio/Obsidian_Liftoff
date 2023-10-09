@@ -40,3 +40,9 @@ prose:
           options:
           	- name: "Obsidian"
               value: "obsidian"
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: CURRENT_DATETIME
+
