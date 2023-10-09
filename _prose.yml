@@ -1,5 +1,5 @@
 prose:
-  rooturl: '_posts'
+  rooturl: ''
   siteurl: 'https://meridian-corp.web.app/'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'assets/uploads'
