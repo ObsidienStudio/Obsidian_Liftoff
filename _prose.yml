@@ -12,12 +12,16 @@ prose:
     - /archetypes
   metadata:
     content/posts:
-      - name: "category"
+      - name: "title"
         field:
-          element: "hidden"
-          value: "articles"
-    _posts/blog:
-      - name: "category"
+          element: "text"
+          label: "Posts"
+      - name: "date"
         field:
-          element: "hidden"
-          value: "blog"
+          element: "date"
+          label: "Date publication"
+          value: CURRENT_DATETIME
+      - name : "text"
+      	field:
+        	element: "description"
+            label: "Description
