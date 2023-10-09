@@ -24,7 +24,7 @@ prose:
         field:
           element: "text"
           label: "Description"
-    "content/posts/bienvenue":
+    "content/posts":
       - name: "seo_title"
         field:
           element: "text"
@@ -65,4 +65,3 @@ prose:
           element: "hidden"
           label: "Newsletter"
           value: false
-
