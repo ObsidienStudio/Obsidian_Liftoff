@@ -12,6 +12,7 @@ prose:
     - /layouts
     - /themes
     - /public
+    - /resources
     - /archetypes
   metadata:
     /content/about:
