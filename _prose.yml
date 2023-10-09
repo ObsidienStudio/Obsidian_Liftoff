@@ -5,12 +5,16 @@ prose:
   media: ''
   ignore:
     - firebase.json
+    - .firebasesrc
+    - .gitignore
+    - .gitmodules
+    - .hugo_build.lock
     - /layouts
     - /themes
     - /public
     - /archetypes
   metadata:
-    content/about:
+    /content/about:
       - name: "seo_title"
         field:
           element: "text"
