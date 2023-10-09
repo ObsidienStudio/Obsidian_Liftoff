@@ -45,4 +45,24 @@ prose:
           element: "hidden"
           label: "Date"
           value: CURRENT_DATETIME
+      - name: "toc"
+        field:
+          element: "hidden"
+          label: "Toc"
+          value: false
+      - name: "related"
+        field:
+          element: "hidden"
+          label: "Liaison"
+          value: false
+      - name: "social_share"
+        field:
+          element: "hidden"
+          label: "Reseaux"
+          value: false
+      - name: "newsletter"
+        field:
+          element: "hidden"
+          label: "Newsletter"
+          value: false
 
