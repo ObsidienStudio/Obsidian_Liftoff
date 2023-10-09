@@ -114,3 +114,15 @@ prose:
             value: "seum"
           - name: "Veko"
             value: "veko"
+      - name: "tech_stack"
+        field:
+          element: "text"
+          label: "Technologies"
+          alterable: true
+          options:
+          - name: "Foundry"
+            value: "foundry"
+          - name: "C#"
+            value: "C#"
+          - name: "JS"
+            value: "js"
