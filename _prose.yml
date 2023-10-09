@@ -64,4 +64,22 @@ prose:
         field:
           element: "hidden"
           label: "Newsletter"
-          value: false
+          value: false          
+    "content/contact":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"          
+    "content/about":
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
