@@ -15,7 +15,7 @@ prose:
     - /resources
     - /archetypes
   metadata:
-    /content/about:
+    content/about:
       - name: "seo_title"
         field:
           element: "text"
