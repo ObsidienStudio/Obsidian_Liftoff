@@ -16,8 +16,8 @@ prose:
           label: "Titre"
       - name: "description"
       	field:
-        	element: "text"
-            label: "Description"
+          element: "text"
+          label: "Description"
     _posts:
       - name: "layout"
         field:
