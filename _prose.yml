@@ -16,6 +16,10 @@ prose:
         field:
           element: "text"
           label: "Titre"
+      - name: "description"
+      	field:
+        	element: "text"
+            label: "Description"
     content/posts:
       - name: "seo_title"
         field:
