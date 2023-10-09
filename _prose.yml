@@ -6,11 +6,10 @@ prose:
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'assets/uploads'
   ignore:
-    - *.md
+    - firebase.json
     - /layouts
     - /themes
     - /archetypes
-    - 
   metadata:
     _posts:
       - name: "layout"
