@@ -38,8 +38,8 @@ prose:
           element: "text"
           label: "Auteur"
           options:
-          	- name: "Obsidian"
-              value: "obsidian"
+          - name: "Obsidian"
+            value: "obsidian"
       - name: "date"
         field:
           element: "hidden"
