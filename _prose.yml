@@ -74,12 +74,31 @@ prose:
         field:
           element: "text"
           label: "Description"          
-    "content/about":
+    "content/projets":
       - name: "seo_title"
         field:
           element: "text"
           label: "Titre"
+      - name: "summary"
+        field:
+          element: "text"
+          label: "Sommaire"
       - name: "description"
         field:
           element: "text"
           label: "Description"
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: CURRENT_DATETIME
+      - name: "feature_mage"
+        field:
+          element: "text"
+          label: "Nom fichier image"
+        field:
+          element: "text"
+          label: "Auteur"
+          options:
+          - name: "Obsidian"
+            value: "obsidian"
