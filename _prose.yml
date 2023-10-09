@@ -35,8 +35,9 @@ prose:
           label: "Slug"
       - name: "author"
         field:
-          element: "text"
+          element: "multiselect"
           label: "Auteur"
+          alterable: true
           options:
           - name: "Obsidian"
             value: "obsidian"
@@ -98,14 +99,14 @@ prose:
           label: "Nom fichier image"
       - name: "author"
         field:
-          element: "text"
+          element: "multiselect"
           label: "Auteur"
           options:
           - name: "Obsidian"
             value: "obsidian"
       - name: "project_types"
         field:
-          element: "text"
+          element: "multiselect"
           label: "Catégorie projet"
           options:
           - name: "Obsidian"
@@ -116,7 +117,7 @@ prose:
             value: "veko"
       - name: "tech_stack"
         field:
-          element: "text"
+          element: "multiselect"
           label: "Technologies"
           alterable: true
           options:
