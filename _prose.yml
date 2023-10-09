@@ -15,7 +15,7 @@ prose:
       - name: "seo_title"
         field:
           element: "text"
-          label: "Posts"
+          label: "Titre"
       - name: "date"
         field:
           element: "date"
