@@ -33,3 +33,10 @@ prose:
         field:
           element: "text"
           label: "Slug"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Auteur"
+          options:
+          	- name: "Obsidian"
+              value: "obsidian"
