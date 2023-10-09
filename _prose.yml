@@ -29,3 +29,6 @@ prose:
       	field:
         	element: "multiselect"
             label: "Tags"
+            options:
+  				- name: 'Obsidian'
+    			value: 'obsidian'
