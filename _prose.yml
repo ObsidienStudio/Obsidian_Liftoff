@@ -11,31 +11,13 @@ prose:
     - /themes
     - /archetypes
   metadata:
-    _posts:
-      - name: "layout"
+    content/posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "articles"
+    _posts/blog:
+      - name: "category"
         field:
           element: "hidden"
           value: "blog"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-    _posts/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
