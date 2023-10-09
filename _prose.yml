@@ -99,7 +99,7 @@ prose:
           label: "Nom fichier image"
       - name: "author"
         field:
-          element: "multiselect"
+          element: "select"
           label: "Auteur"
           options:
           - name: "Obsidian"
