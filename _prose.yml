@@ -24,7 +24,7 @@ prose:
         field:
           element: "text"
           label: "Description"
-    "content/posts":
+    "content/posts/bienvenue":
       - name: "seo_title"
         field:
           element: "text"
