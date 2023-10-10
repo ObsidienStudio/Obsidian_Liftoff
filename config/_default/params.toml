@@ -27,7 +27,7 @@ custom_js = 'custom.js' # Add the specified file to assets before setting this p
 ### Web schemas
 # Open Graph
 images = ['images/default.png'] # Fallback for Open Graph and Twitter Cards images if none are present in front matter. Enter path to the image.
-ogLocale = "en_US" # Open graph locale
+ogLocale = "fr_FR" # Open graph locale
 
 # Twitter Cards
 twitterSite = "corp_meridian" # Enter your twitter handle without the @
