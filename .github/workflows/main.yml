@@ -1,7 +1,9 @@
 name: Firebase update
-branch: master
 run-name: ${{ github.actor }} à lancé une update du site Meridian
-on: [push]
+on: 
+  push:
+    branches:
+      - master[push]
 jobs:
   deploy:
     runs-on: ubuntu-22.04
