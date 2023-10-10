@@ -14,7 +14,7 @@
 
 [[main]]
     identifier = "posts"
-    name = "Tout les articles"
+    name = "Tous les articles"
     url = "/posts/"
     parent = "content"
     weight = 2
@@ -39,7 +39,7 @@
     name = "Contact"
     url = "/contact/"
     weight = 4
-    
+
 [[main]]
     identifier = "about"
     name = "Nous"
