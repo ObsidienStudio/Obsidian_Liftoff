@@ -12,7 +12,7 @@
 .project-entry {
   border: 1px solid var(--color-contrast-low);
   border-radius: 10px;
-  box-shadow: 0 0 20px -10px var(--color-contrast-low),
+  box-shadow: 0 0 10px -10px var(--color-contrast-low),
     0 0 20px -10px var(--color-contrast-low);
 }
 
@@ -36,13 +36,13 @@
 
 .project-entry-type {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   padding: 0.2rem 0.4rem;
+  border-radius: 8px;
   background-color: var(--color-bg);
-  border-left: 1px solid var(--color-contrast-low);
-  border-bottom: 1px solid var(--color-contrast-low);
-  border-top-right-radius: 10px;
+  border: 1px solid var(--color-contrast-low);
+  line-height: 1rem;
 
   a {
     @include font-size("sm");
