@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} à lancé une update du site Meridian
 on: 
   push:
     branches:
-      - master[push]
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-22.04
