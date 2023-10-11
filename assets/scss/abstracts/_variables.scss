@@ -2,11 +2,12 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-:root, [data-theme="default"] {
+:root,
+[data-theme="default"] {
   // --color-primary: rgb(18, 120, 175);
-   --color-primary: black;
+  --color-primary: black;
   --color-inline-code: hsl(0, 81%, 35%);
-  
+
   /* color contrasts */
   --color-bg: rgb(248, 248, 248);
   --color-contrast-lower: hsl(0, 0%, 95%);
@@ -35,10 +36,10 @@
 
 [data-theme="dark"] {
   // --color-primary: rgb(86, 184, 237);
-  
-   --color-primary: white;
+
+  --color-primary: white;
   --color-inline-code: hsl(0, 81%, 70%);
-  
+
   /* color contrasts */
   --color-bg: rgb(18, 18, 18);
   --color-contrast-lower: hsl(240, 6%, 15%);
@@ -52,17 +53,17 @@
   --color-text: var(--color-contrast-high);
 }
 
-
 // Fonts
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$text-font-stack: "Roboto", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
-
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace;
 
 // Containers
 
@@ -70,21 +71,19 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// @type Length
 $max-width: 1180px;
 
-
 // Responsiveness
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'x-small': 320px,
-  'small': 576px,
-  'medium': 768px,
-  'm-large': 900px,
-  'large': 1024px,
-  'x-large': 1200px,
+  "x-small": 320px,
+  "small": 576px,
+  "medium": 768px,
+  "m-large": 900px,
+  "large": 1024px,
+  "x-large": 1200px,
 );
-
 
 // Assets
 
@@ -92,4 +91,4 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'https://cdn.example.com/assets/';
-$base-url: '/assets/';
+$base-url: "/assets/";

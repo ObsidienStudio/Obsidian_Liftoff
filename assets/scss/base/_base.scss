@@ -5,7 +5,7 @@
 /**
  * Set up a decent box model on the root element
  */
- html {
+html {
   box-sizing: border-box;
 }
 
@@ -21,7 +21,8 @@
   box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -32,12 +33,12 @@ body {
   flex-direction: column;
 }
 
-main {   
-  flex: 1 0 auto; 
+main {
+  flex: 1 0 auto;
 }
 
 footer {
-  flex-shrink: 0;    
+  flex-shrink: 0;
 }
 
 a {
@@ -51,36 +52,37 @@ a {
 }
 
 h1 {
-  @include font-size('xl');
+  @include font-size("xl");
 }
 
 h2 {
-  @include font-size('lg');
+  @include font-size("lg");
 }
 
 h3 {
-  @include font-size('md');
+  @include font-size("md");
 }
 
 h4 {
-  @include font-size('base');
+  @include font-size("base");
 }
 
 h5 {
-  @include font-size('sm');
+  @include font-size("sm");
 }
 
 h6 {
-  @include font-size('sm');
+  @include font-size("sm");
 }
 
 table {
-  border-collapse: collapse;    
+  border-collapse: collapse;
   display: block;
   overflow-x: auto;
 }
 
-td, th {
+td,
+th {
   border: 1px solid var(--color-contrast-medium-low);
   padding: 10px 20px;
   font-size: 0.9rem;
@@ -113,7 +115,7 @@ blockquote {
   border-left: 10px solid var(--color-contrast-low);
   margin: 1.5em 10px;
   padding: 0.7em 10px;
-  quotes: "\201C" "\201D";
+  quotes: "\201C""\201D";
 
   p {
     display: inline;
@@ -141,12 +143,13 @@ code {
 
 pre:not([style]) {
   // If no highlighting is applied already
-  background-color:#272822;
-  color:#f8f8f2;
+  background-color: #272822;
+  color: #f8f8f2;
   padding: 20px;
 }
 
-p > code, li > code {
+p > code,
+li > code {
   background-color: var(--color-contrast-lower);
   font-size: 1rem;
   color: var(--color-inline-code);
@@ -159,19 +162,20 @@ form {
   flex-wrap: wrap;
   row-gap: 10px;
 
-  input, textarea {
+  input,
+  textarea {
     border: 1px solid var(--color-contrast-medium-low);
     padding: 10px 12px;
     font-size: 1rem;
     background-color: var(--color-contrast-lower);
     color: var(--color-contrast-high);
 
-    @include respond-to('small') {
+    @include respond-to("small") {
       padding: 15px 12px;
       min-width: 250px;
     }
   }
-  
+
   button {
     cursor: pointer;
   }

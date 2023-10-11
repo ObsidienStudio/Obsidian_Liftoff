@@ -1,30 +1,30 @@
 /* Add custom CSS */
 
-#js-navbar .logo{
+#js-navbar .logo {
     font-size: xx-large;
 }
+
 /* #js-navbar .logo-bar{
     width: 100%;
     height: 1px;
     border-bottom: 3px solid var(--color-primary);
 } */
 
-.single-feature-img img{
+.single-feature-img img {
     margin: auto;
 }
 
-
-
-.slider_right:hover{
-    cursor: pointer;    
+.slider_right:hover {
+    cursor: pointer;
     pointer-events: none;
 }
-.slider_left:hover{
+
+.slider_left:hover {
     cursor: pointer;
-        pointer-events: none;
+    pointer-events: none;
 }
 
-.carousel{
+.carousel {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -33,19 +33,21 @@
     margin: auto;
 }
 
-.caroussel-img{
+.caroussel-img {
     height: 15rem;
     margin: 0 10px;
-}
-.caroussel-img:hover{
-    filter:brightness(150%);
+    border-radius: 20px;
 }
 
-.caroussel-img:focus{
+.caroussel-img:hover {
+    filter: brightness(150%);
+}
+
+.caroussel-img:focus {
     scale: 150%;
 }
 
-.creator-list{
+.creator-list {
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -53,7 +55,7 @@
     height: 100%;
 }
 
-.creator-entry{
+.creator-entry {
     width: 10em;
     height: 16em;
     display: flex;
@@ -61,7 +63,7 @@
 
 }
 
-.creator-entry-img img{
+.creator-entry-img img {
     border-radius: 50%;
     margin: 10px;
     width: 10em;
@@ -69,43 +71,47 @@
     object-fit: cover;
 }
 
-.creator-single-img{
-display: flex;
+.creator-single-img {
+    display: flex;
 }
-.creator-single-img img{
+
+.creator-single-img img {
     border-radius: 50%;
     margin: auto;
     width: 20em;
     height: 20em;
     object-fit: cover;
 }
-.creator-list-summary{
+
+.creator-list-summary {
     font-size: small;
 }
 
-.creator-entry-title{
+.creator-entry-title {
     margin: 5px auto;
     text-align: center;
 }
 
-.creator-projects{
+.creator-projects {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-a{
-    position:relative;
+a {
+    position: relative;
 }
-a:hover{
-    
+
+a:hover {
+
     text-decoration: none;
 }
+
 a:not(.menu-link):not(.btn-primary):not(.btn-secondary)::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 2px;
     border-radius: 1px;
     background-color: var(--color-primary);
     bottom: 0;
@@ -113,12 +119,12 @@ a:not(.menu-link):not(.btn-primary):not(.btn-secondary)::before {
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
-  }
-  
-  a:not(.menu-link):not(.btn-primary):not(.btn-secondary):hover::before {
+}
+
+a:not(.menu-link):not(.btn-primary):not(.btn-secondary):hover::before {
     transform-origin: left;
     transform: scaleX(1);
-  }
+}
 
 .discordLink {
     display: flex;
@@ -127,15 +133,16 @@ a:not(.menu-link):not(.btn-primary):not(.btn-secondary)::before {
 }
 
 
-.creator-projects .project-entry{
+.creator-projects .project-entry {
     max-width: 45%;
 }
 
-.post-entry{
+.post-entry {
     display: flex;
     flex-direction: row;
 }
-.post-entry img{
+
+.post-entry img {
     height: 100px;
     width: 100px;
     margin: 5px;
