@@ -18,7 +18,6 @@ techstack:
   - Discord
 live_url: null
 source_url: null
-published: true
 ---
 
 Notre bébé à nous, notre ilot de fraîcheur.
