@@ -2,7 +2,7 @@
 date: 2023-05-10T14:52:30.000Z
 title: Obsidian
 seo_title: Obsidian Glover
-summary: Créateur de la structure Meridian.
+summary: 'Créateur de la structure Meridian. 1 '
 description: Créateur de la structure Meridian.
 slug: obsidian
 author: Obsidian
