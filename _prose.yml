@@ -29,6 +29,10 @@ prose:
         field:
           element: "text"
           label: "Titre"
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre SEO"
       - name: "slug"
         field:
           element: "text"
