@@ -1,10 +1,28 @@
 ---
+title: Le site
 date: '2023-10-09 20:20 +0200'
-published: false
 seo_title: Le site
 slug: website
 author:
   - obsidian
+
+lastmod: 
+expiryDate: 
+publishDate: 
+draft: false
+  
+feature_image: 
+feature_image_alt: 
+
+categories:
+tags:
+series:
+
+toc: true
+related: true
+social_share: true
+newsletter: true
+disable_comments: false
 ---
 ## 1 semaine
 
