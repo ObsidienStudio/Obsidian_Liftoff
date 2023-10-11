@@ -25,7 +25,7 @@ prose:
           element: "text"
           label: "Description"
     "content/posts":
-      - name: "seo_title"
+      - name: "title"
         field:
           element: "text"
           label: "Titre"
@@ -37,6 +37,10 @@ prose:
         field:
           element: "text"
           label: "Slug"
+      - name: "feature_image"
+        field:
+          element: "text"
+          label: "Image principale"
       - name: "author"
         field:
           element: "multiselect"
@@ -45,6 +49,34 @@ prose:
           options:
           - name: "Obsidian"
             value: "obsidian"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          alterable: true
+          options:
+          - name: "Jeux"
+            value: "jeux"
+          - name: "Musique"
+            value: "musique"
+          - name: "Art"
+            value: "art"
+          - name: "Cinema"
+            value: "cinema"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          alterable: true
+          options:
+          - name: "MMO"
+            value: "mmo"
+          - name: "Multijoueur"
+            value: "multijoueur"
+          - name: "FPS"
+            value: "fps"
+      - name: "draft"
+        field:
+          element: "hidden"
+          value: false
       - name: "date"
         field:
           element: "hidden"
@@ -71,19 +103,27 @@ prose:
           label: "Newsletter"
           value: false          
     "content/contact":
-      - name: "seo_title"
+      - name: "title"
         field:
           element: "text"
           label: "Titre"
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre SEO"
       - name: "description"
         field:
           element: "text"
           label: "Description"          
     "content/projets":
-      - name: "seo_title"
+      - name: "title"
         field:
           element: "text"
           label: "Titre"
+      - name: "seo_title"
+        field:
+          element: "text"
+          label: "Titre SEO"
       - name: "summary"
         field:
           element: "text"
@@ -134,6 +174,10 @@ prose:
           - name: "JS"
             value: "js"          
     "content/jeux":
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
       - name: "seo_title"
         field:
           element: "text"
@@ -174,6 +218,10 @@ prose:
           - name: "Strategy Game"
             value: "strat"          
     "content/createurs":
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
       - name: "seo_title"
         field:
           element: "text"
