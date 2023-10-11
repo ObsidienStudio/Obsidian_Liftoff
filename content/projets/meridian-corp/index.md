@@ -1,12 +1,12 @@
 ---
+draft: false
 date: 2023-07-20T08:52:30.000Z
 title: Meridian Corp
 seo_title: Meridian Corp
-summary: Meridian Corp est un projet de développement de communauté
+summary: 'X '
 description: Meridian Corp est un projet de communauté en développement
 slug: meridian-corp
 author: Martin Gasque
-draft: false
 lastmod: null
 expiryDate: null
 publishDate: null
@@ -18,6 +18,7 @@ techstack:
   - Discord
 live_url: null
 source_url: null
+published: true
 ---
 
 Notre bébé à nous, notre ilot de fraîcheur.

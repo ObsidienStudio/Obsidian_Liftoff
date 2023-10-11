@@ -1,25 +1,22 @@
 ---
+date: 2023-05-10T14:52:30.000Z
 title: Seum
 seo_title: Seum
-summary: Seum s'occupe de la partie graphique et communication de la communauté
-description: Seum
+summary: Graphisme et Marketing de la communauté. 1
+description: Graphisme et Marketing de la communauté.
 slug: Seum
 author: Seum
-
 draft: false
-date: 2023-05-10T09:52:30-05:00
-lastmod: 
-expiryDate: 
-publishDate: 
-
+lastmod: null
+expiryDate: null
+publishDate: null
 feature_image: seum.jpg
-feature_image_alt:  seum.jpg
-
-project types:
-
-techstack:
-live_url:
-source_url:
+feature_image_alt: seum.jpg
+project types: null
+techstack: null
+live_url: null
+source_url: null
+published: true
 ---
 
 S3UM, Samuel Bouyeau, est un créateur depuis la fondation de la Meridian Corp.
