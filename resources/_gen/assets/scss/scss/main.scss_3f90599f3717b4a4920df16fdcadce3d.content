@@ -585,7 +585,7 @@ body {
   font: normal 125%/1.4 "Roboto", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .summary-text, .project-list-summary, .post-list-summary {
-  font-weight: 300;
+  font-weight: 400;
   font-size: var(--font-size-base);
   line-height: calc(8px + 2ex);
   color: var(--color-contrast-medium-high); }
@@ -1077,7 +1077,7 @@ body {
     font-size: var(--font-size-sm);
     line-height: calc(8px + 2ex);
     color: var(--color-contrast-medium);
-    font-weight: 300; }
+    font-weight: 400; }
 
 @media (min-width: 1200px) {
   .toc {
@@ -1220,7 +1220,7 @@ body {
 
 .see-more-projects {
   color: var(--color-contrast-medium);
-  font-weight: 300;
+  font-weight: 400;
   font-size: var(--font-size-base); }
 
 #contact-form {
