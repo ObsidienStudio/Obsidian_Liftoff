@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 2rem 1rem;
+  gap: 2rem;
 
   & > * {
     flex: 1 1 350px;
@@ -10,6 +10,7 @@
 }
 
 .project-entry {
+  min-height: 26rem;
   border: 1px solid var(--color-contrast-low);
   border-radius: 10px;
   box-shadow: 0 0 10px -10px var(--color-contrast-low),

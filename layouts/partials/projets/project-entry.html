@@ -4,14 +4,14 @@
     {{ with .Param "project_types" }}
     <div class="project-entry-type">
       {{ range first 1 . }}
-        <a href="{{ "project_types" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
+        <a class="project-entry-link" href="{{ "project_types" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
       {{ end }}
     </div>
     {{ end }}
   </div>
   <div class="project-entry-info">
     <h3 class="project-entry-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a class='project-entry-link' href="{{ .Permalink }}">{{ .Title }}</a>
       <sup>{{ partial "general/label-drafts.html" . }}</sup>
     </h3>
     <div class="project-list-meta">
