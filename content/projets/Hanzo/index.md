@@ -4,7 +4,7 @@ date: 2022-05-10T14:52:30.000Z
 title: Hanzo
 seo_title: Hanzo
 summary: Premier projet de jeu de rôle.
-description: Hanzo est mon premier projet de jeu de rôle sérieux
+description: Premier projet de jeu de rôle.
 slug: hanzo
 author: Obsidian
 lastmod: null
