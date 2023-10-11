@@ -203,20 +203,22 @@ prose:
         field:
           element: "text"
           label: "Image presentation"
-      - name: "categories"
+      - name: "tags"
         field:
           element: "multiselect"
-          label: "Catégories"
           alterable: true
           options:
           - name: "MMO"
             value: "mmo"
-          - name: "RPG"
-            value: "rpg"
+          - name: "Multijoueur"
+            value: "multijoueur"
           - name: "FPS"
             value: "fps"
-          - name: "Strategy Game"
-            value: "strat"          
+      - name: "categories"
+        field:
+          element: "hidden"
+          label: "Catégories"
+          value: "- Jeux"
     "content/createurs":
       - name: "title"
         field:
