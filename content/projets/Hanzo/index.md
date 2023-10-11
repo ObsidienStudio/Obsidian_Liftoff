@@ -1,29 +1,26 @@
 ---
+draft: false
+date: 2022-05-10T14:52:30.000Z
 title: Hanzo
 seo_title: Hanzo
-summary: Hanzo est mon premier projet de jeu de rôle sérieux.
+summary: Premier projet de jeu de rôle.
 description: Hanzo est mon premier projet de jeu de rôle sérieux
 slug: hanzo
 author: Obsidian
-
-draft: false
-date: 2022-05-10T09:52:30-05:00
-lastmod: 
-expiryDate: 
-publishDate: 
-
+lastmod: null
+expiryDate: null
+publishDate: null
 feature_image: hanzo_wallpaper.jpg
 feature_image_alt: hanzo_wallpaper.jpg
-
-project_types: 
-    - Obsidian
-
+project_types:
+  - Obsidian
 techstack:
-    - Foundry
-    - Dungeondraft
-    - Dnd5e
-live_url:
-source_url:
+  - Foundry
+  - Dungeondraft
+  - Dnd5e
+live_url: null
+source_url: null
+published: true
 ---
 
 Cette article vise à vous donner des détails sur le projet Hanzo et sa création
