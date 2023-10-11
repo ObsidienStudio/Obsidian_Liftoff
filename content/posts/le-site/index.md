@@ -1,6 +1,6 @@
 ---
 title: Le site
-date: '2023-10-09 20:20 +0200'
+date: 
 seo_title: Le site
 slug: website
 author:
