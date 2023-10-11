@@ -73,10 +73,10 @@ prose:
             value: "multijoueur"
           - name: "FPS"
             value: "fps"
-      - name: "draft"
+      - name: "published"
         field:
           element: "hidden"
-          value: false
+          value: true
       - name: "date"
         field:
           element: "hidden"
@@ -141,11 +141,11 @@ prose:
           element: "hidden"
           label: "Date"
           value: CURRENT_DATETIME
-      - name: "draft"
+      - name: "published"
         field:
           element: "hidden"
           label: "Date"
-          value: false
+          value: true
       - name: "feature_image"
         field:
           element: "text"
