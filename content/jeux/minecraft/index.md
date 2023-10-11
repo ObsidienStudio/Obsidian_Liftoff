@@ -24,38 +24,13 @@ social_share: true
 newsletter: true
 disable_comments: false
 ---
- Ahh, minecraft...
 
+Ahh, minecraft...
 
- ...
+...
 
+![Minecraft game](./logo.png)
 
+...
 
-
-
-![tst]({{site.baseurl}}/content/jeux/minecraft/how.png)
-
-
-
- ...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- ...
+...
