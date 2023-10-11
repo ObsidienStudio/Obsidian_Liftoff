@@ -1,5 +1,5 @@
 ### General
-baseURL = 'https://meridian-corp.firebaseapp.com' # Enter your full production URL
+baseURL = 'https://meridian-corp.web.app' # Enter your full production URL
 languageCode = 'fr-FR' # Default
 timeZone = 'Europe/Paris' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 title = 'Meridian Corp' # Site title used throughout site
