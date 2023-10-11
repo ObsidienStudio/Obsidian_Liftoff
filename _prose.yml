@@ -132,12 +132,21 @@ prose:
         field:
           element: "text"
           label: "Description"
+      - name: "slug"
+        field:
+          element: "text"
+          label: "nom dans URL"
       - name: "date"
         field:
           element: "hidden"
           label: "Date"
           value: CURRENT_DATETIME
-      - name: "feature_mage"
+      - name: "draft"
+        field:
+          element: "hidden"
+          label: "Date"
+          value: false
+      - name: "feature_image"
         field:
           element: "text"
           label: "Nom fichier image"
