@@ -3,8 +3,8 @@ draft: false
 date: 2023-02-20T08:52:30.000Z
 title: Hanzo - Le jeu vidéo
 seo_title: Hanzo - Le jeu vidéo
-summary: Adaptation du Jeu de rôle en Jeu vidéo
-description: Hanzo - Le jeu vidéo est l'adaptation du jeu de rôle en jeu vidéo
+summary: Adaptation du Jeu de rôle en Jeu vidéo.
+description: Adaptation du Jeu de rôle en Jeu vidéo. 1
 slug: hanzo-vg
 author: John Doe
 lastmod: null
