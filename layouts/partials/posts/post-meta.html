@@ -1,4 +1,5 @@
 <div class="post-list-dates">
+  {{if not .Date.IsZero}}
   {{- if not (eq .Lastmod .Date) -}}
     Posté le :
   {{ end -}}
@@ -12,4 +13,5 @@
     Mis à jour le : {{ .Lastmod.Format "Jan 2, 2006" -}}
   {{- end -}}
   &nbsp;&middot;&nbsp;
+  {{end}}
   {{- .ReadingTime }} min de lecture.</div>
