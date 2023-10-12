@@ -1,105 +1,116 @@
-import { defineConfig } from "tinacms";
+import { defineConfig } from 'tinacms';
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'main';
 
 export default defineConfig({
   branch,
-  clientId: "403e9ac8-0d3b-4d55-bfa2-e2acc1e6d028", // Get this from tina.io
-  token: "006256fba5595640e08c3a50d90a4ffd32789fbb", // Get this from tina.io
+  clientId: '403e9ac8-0d3b-4d55-bfa2-e2acc1e6d028', // Get this from tina.io
+  token: '006256fba5595640e08c3a50d90a4ffd32789fbb', // Get this from tina.io
 
   build: {
-    outputFolder: "admin",
-    publicFolder: "static",
+    outputFolder: 'admin',
+    publicFolder: 'assets',
   },
   media: {
     tina: {
-      mediaRoot: "",
-      publicFolder: "static",
+      mediaRoot: 'uploads',
+      publicFolder: 'assets',
     },
   },
   schema: {
     collections: [
       {
-        name: "about",
-        label: "A propos",
-        path: "content/about",
+        name: 'about',
+        label: 'A propos',
+        path: 'content/about',
         fields: [          
           {
-            type: "string",
-            name: "title",
-            label: "Titre",
+            type: 'string',
+            name: 'title',
+            label: 'Titre',
             isTitle: true,
             required: true,
           },
           {
-            type: "string",
-            name: "seo_title",
-            label: "Titre SEO",
+            type: 'string',
+            name: 'seo_title',
+            label: 'Titre SEO',
             required: true,
           },
           {
-            type: "text",
-            name: "slug",
-            label: "Slug",
-            required: true,
+            type: 'string',
+            name: 'slug',
+            label: 'Slug',
           },
           {
-            type: "text",
-            name: "description",
-            label: "Description",
+            type: 'string',
+            name: 'description',
+            label: 'Description',
           },
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body',
             isBody: true,
           },
         ]
       },
       {
-        name: "post",
-        label: "Articles",
-        path: "content/posts",
+        name: 'post',
+        label: 'Articles',
+        path: 'content/posts', 
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+              return `${values?.title
+                ?.toLowerCase()
+                .replace(/ /g, '-') + '/index.md'}`
+            },
+          }
+        },
         fields: [
           {
-            type: "string",
-            name: "title",
-            label: "Titre",
+            type: 'string',
+            name: 'title',
+            label: 'Titre',
             isTitle: true,
             required: true,
           },
           {
-            type: "string",
-            name: "seo_title",
-            label: "Titre SEO",
+            type: 'string',
+            name: 'seo_title',
+            label: 'Titre SEO',
             required: true,
           },
           {
-            type: "text",
-            name: "summary",
-            label: "Sommaire",
+            type: 'string',
+            name: 'summary',
+            label: 'Sommaire',
           },
           {
-            type: "text",
-            name: "description",
-            label: "Description",
+            type: 'string',
+            name: 'description',
+            label: 'Description',
           },
           {
-            type: "text",
-            name: "slug",
-            label: "Slug",
-            required: true,
+            type: 'string',
+            name: 'slug',
+            label: 'Slug',
           },
           {
-            type: "image",
-            name: "image",
-            label: "Ajout image",
+            type: 'image',
+            name: 'image',
+            label: 'Ajout image',
           },
           {
-            type: "datetime",
-            name: "date",
-            label: "Date",
+            type: 'datetime',
+            name: 'date',
+            label: 'Date',
           },
           {
             label: 'Auteur',
@@ -182,56 +193,68 @@ export default defineConfig({
             ]
           },
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body',
             isBody: true,
           },
         ],
       },
       {
-        name: "projets",
-        label: "Projets",
-        path: "content/projets",
+        name: 'projets',
+        label: 'Projets',
+        path: 'content/projets',
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+              return `${values?.title
+                ?.toLowerCase()
+                .replace(/ /g, '-') + '/index.md'}`
+            },
+          }
+        },
         fields: [
           {
-            type: "string",
-            name: "title",
-            label: "Titre",
+            type: 'string',
+            name: 'title',
+            label: 'Titre',
             isTitle: true,
             required: true,
           },
           {
-            type: "string",
-            name: "seo_title",
-            label: "Titre SEO",
+            type: 'string',
+            name: 'seo_title',
+            label: 'Titre SEO',
             required: true,
           },
           {
-            type: "text",
-            name: "summary",
-            label: "Sommaire",
+            type: 'string',
+            name: 'summary',
+            label: 'Sommaire',
           },
           {
-            type: "text",
-            name: "description",
-            label: "Description",
+            type: 'string',
+            name: 'description',
+            label: 'Description',
           },
           {
-            type: "text",
-            name: "slug",
-            label: "Slug",
-            required: true,
+            type: 'string',
+            name: 'slug',
+            label: 'Slug',
           },
           {
-            type: "image",
-            name: "image",
-            label: "Ajout image",
+            type: 'image',
+            name: 'image',
+            label: 'Ajout image',
           },
           {
-            type: "datetime",
-            name: "date",
-            label: "Date",
+            type: 'datetime',
+            name: 'date',
+            label: 'Date',
           },
           {
             label: 'Auteur',
@@ -301,9 +324,211 @@ export default defineConfig({
             ]
           },
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body',
+            isBody: true,
+          },
+        ]
+      },
+      {
+        name: 'contact',
+        label: 'Contact',
+        path: 'content/contact',
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Titre',
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'seo_title',
+            label: 'Titre SEO',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'description',
+            label: 'Description',
+          },
+        ]
+      },
+      {
+        name: 'jdb',
+        label: 'Journal de bord',
+        path: 'content/JDB',
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Titre',
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'seo_title',
+            label: 'Titre SEO',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'description',
+            label: 'Description',
+          },
+          {
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body',
+            isBody: true,
+          },
+        ]
+      },
+      {
+        name: 'createurs',
+        label: 'Createurs',
+        path: 'content/createurs',
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+              return `${values?.title
+                ?.toLowerCase()
+                .replace(/ /g, '-') + '/index.md'}`
+            },
+          }
+        },
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Titre',
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'seo_title',
+            label: 'Titre SEO',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'summary',
+            label: 'Sommaire',
+          },
+          {
+            type: 'string',
+            name: 'slug',
+            label: 'Slug',
+          },
+          {
+            type: 'string',
+            name: 'feature_image',
+            label: 'Image principale',
+          },
+          {
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body',
+            isBody: true,
+          },
+        ]
+      },
+      {
+        name: 'jeux',
+        label: 'Jeux',
+        path: 'content/jeux',
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+              return `${values?.title
+                ?.toLowerCase()
+                .replace(/ /g, '-') + '/index.md'}`
+            },
+          }
+        },
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Titre',
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'seo_title',
+            label: 'Titre SEO',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'summary',
+            label: 'Sommaire',
+          },
+          {
+            type: 'string',
+            name: 'description',
+            label: 'Description',
+          },
+          {
+            type: 'string',
+            name: 'slug',
+            label: 'Slug',
+          },
+          {
+            type: 'string',
+            name: 'feature_image',
+            label: 'Image principale',
+          },
+          {
+            type: 'datetime',
+            name: 'date',
+            label: 'Date',
+          },
+          {
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true,
+            options: [
+              {
+                value: 'mmo',
+                label: 'MMO',
+              },
+              {
+                value: 'fps',
+                label: 'FPS',
+              },
+              {
+                value: 'multi',
+                label: 'Multijoueur',
+              },
+              {
+                value: 'strategy',
+                label: 'Stratégie',
+              },
+              {
+                value: 'rpg',
+                label: 'RPG',
+              },
+            ]
+          },
+          {
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body',
             isBody: true,
           },
         ]

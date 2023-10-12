@@ -9,12 +9,12 @@ var config_default = defineConfig({
   // Get this from tina.io
   build: {
     outputFolder: "admin",
-    publicFolder: "static"
+    publicFolder: "assets"
   },
   media: {
     tina: {
-      mediaRoot: "",
-      publicFolder: "static"
+      mediaRoot: "uploads",
+      publicFolder: "assets"
     }
   },
   schema: {
@@ -38,13 +38,12 @@ var config_default = defineConfig({
             required: true
           },
           {
-            type: "text",
+            type: "string",
             name: "slug",
-            label: "Slug",
-            required: true
+            label: "Slug"
           },
           {
-            type: "text",
+            type: "string",
             name: "description",
             label: "Description"
           },
@@ -60,6 +59,16 @@ var config_default = defineConfig({
         name: "post",
         label: "Articles",
         path: "content/posts",
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              return `${values?.title?.toLowerCase().replace(/ /g, "-") + "/index.md"}`;
+            }
+          }
+        },
         fields: [
           {
             type: "string",
@@ -75,20 +84,19 @@ var config_default = defineConfig({
             required: true
           },
           {
-            type: "text",
+            type: "string",
             name: "summary",
             label: "Sommaire"
           },
           {
-            type: "text",
+            type: "string",
             name: "description",
             label: "Description"
           },
           {
-            type: "text",
+            type: "string",
             name: "slug",
-            label: "Slug",
-            required: true
+            label: "Slug"
           },
           {
             type: "image",
@@ -192,6 +200,16 @@ var config_default = defineConfig({
         name: "projets",
         label: "Projets",
         path: "content/projets",
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              return `${values?.title?.toLowerCase().replace(/ /g, "-") + "/index.md"}`;
+            }
+          }
+        },
         fields: [
           {
             type: "string",
@@ -207,20 +225,19 @@ var config_default = defineConfig({
             required: true
           },
           {
-            type: "text",
+            type: "string",
             name: "summary",
             label: "Sommaire"
           },
           {
-            type: "text",
+            type: "string",
             name: "description",
             label: "Description"
           },
           {
-            type: "text",
+            type: "string",
             name: "slug",
-            label: "Slug",
-            required: true
+            label: "Slug"
           },
           {
             type: "image",
@@ -296,6 +313,202 @@ var config_default = defineConfig({
               {
                 value: "obs",
                 label: "OBS"
+              }
+            ]
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true
+          }
+        ]
+      },
+      {
+        name: "contact",
+        label: "Contact",
+        path: "content/contact",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Titre",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "seo_title",
+            label: "Titre SEO",
+            required: true
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description"
+          }
+        ]
+      },
+      {
+        name: "jdb",
+        label: "Journal de bord",
+        path: "content/JDB",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Titre",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "seo_title",
+            label: "Titre SEO",
+            required: true
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description"
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true
+          }
+        ]
+      },
+      {
+        name: "createurs",
+        label: "Createurs",
+        path: "content/createurs",
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              return `${values?.title?.toLowerCase().replace(/ /g, "-") + "/index.md"}`;
+            }
+          }
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Titre",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "seo_title",
+            label: "Titre SEO",
+            required: true
+          },
+          {
+            type: "string",
+            name: "summary",
+            label: "Sommaire"
+          },
+          {
+            type: "string",
+            name: "slug",
+            label: "Slug"
+          },
+          {
+            type: "string",
+            name: "feature_image",
+            label: "Image principale"
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true
+          }
+        ]
+      },
+      {
+        name: "jeux",
+        label: "Jeux",
+        path: "content/jeux",
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              return `${values?.title?.toLowerCase().replace(/ /g, "-") + "/index.md"}`;
+            }
+          }
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Titre",
+            isTitle: true,
+            required: true
+          },
+          {
+            type: "string",
+            name: "seo_title",
+            label: "Titre SEO",
+            required: true
+          },
+          {
+            type: "string",
+            name: "summary",
+            label: "Sommaire"
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description"
+          },
+          {
+            type: "string",
+            name: "slug",
+            label: "Slug"
+          },
+          {
+            type: "string",
+            name: "feature_image",
+            label: "Image principale"
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date"
+          },
+          {
+            label: "Tags",
+            name: "tags",
+            type: "string",
+            list: true,
+            options: [
+              {
+                value: "mmo",
+                label: "MMO"
+              },
+              {
+                value: "fps",
+                label: "FPS"
+              },
+              {
+                value: "multi",
+                label: "Multijoueur"
+              },
+              {
+                value: "strategy",
+                label: "Strat\xE9gie"
+              },
+              {
+                value: "rpg",
+                label: "RPG"
               }
             ]
           },
