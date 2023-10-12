@@ -19,7 +19,7 @@ prose:
       - name: "seo_title"
         field:
           element: "text"
-          label: "Titre"
+          label: "Titre SEO"
       - name: "description"
         field:
           element: "text"
