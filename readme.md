@@ -36,3 +36,4 @@ _prose.yml = config backend (Prose.io)
 
 ### Commandes
 > (hugo) -and (firebase deploy)
+> npx tinacms dev -c "hugo server"
