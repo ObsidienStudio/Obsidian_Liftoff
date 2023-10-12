@@ -1,0 +1,24 @@
+{
+  "name": "obsidian_glass",
+  "version": "1.0.0",
+  "description": "Ce site est à destination des followers de la Méridian Corp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ObsidienStudio/Obsidian_Liftoff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ObsidienStudio/Obsidian_Liftoff/issues"
+  },
+  "homepage": "https://github.com/ObsidienStudio/Obsidian_Liftoff#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.30",
+    "tinacms": "^1.5.21"
+  }
+}

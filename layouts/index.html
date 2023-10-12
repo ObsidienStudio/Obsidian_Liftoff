@@ -48,12 +48,14 @@
   </section>
   {{/*  Shortcodes from page content  */}}
   <section>
+  
     <h2>Les screen de l'équipe</h2>
 <div class="slider">
   <div class="slide-track">
     {{ $screenshots := (.Site.GetPage "/screenshots").Resources }}
+    {{$o := index (where .Site.Pages ".File.Dir" "/screenshots") 0 }}
     {{range $screenshots}}
-    <a href="{{.Permalink}}"><img class="caroussel-img slide" src="screenshots/{{.}}" href='src="screenshots/{{.}}"'></a>
+    <a href="{{.Permalink}}"><img class="caroussel-img slide" src="screenshots/{{.}}" href='screenshots/{{.}}'></a>
    {{end}}
   </div>
   </div>
