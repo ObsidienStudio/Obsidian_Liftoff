@@ -1,0 +1,76 @@
+fragment AboutParts on About {
+  __typename
+  title
+  seo_title
+  slug
+  description
+  body
+}
+
+fragment PostParts on Post {
+  __typename
+  title
+  seo_title
+  summary
+  description
+  slug
+  image
+  date
+  author
+  tags
+  categories
+  body
+}
+
+fragment ProjetsParts on Projets {
+  __typename
+  title
+  seo_title
+  summary
+  description
+  slug
+  image
+  date
+  author
+  project_types
+  tech_stack
+  body
+}
+
+fragment ContactParts on Contact {
+  __typename
+  title
+  seo_title
+  description
+}
+
+fragment JdbParts on Jdb {
+  __typename
+  title
+  seo_title
+  description
+  body
+}
+
+fragment CreateursParts on Createurs {
+  __typename
+  title
+  seo_title
+  summary
+  slug
+  feature_image
+  body
+}
+
+fragment JeuxParts on Jeux {
+  __typename
+  title
+  seo_title
+  summary
+  description
+  slug
+  feature_image
+  date
+  tags
+  body
+}
