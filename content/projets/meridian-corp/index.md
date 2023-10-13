@@ -12,8 +12,7 @@ expiryDate: null
 publishDate: null
 feature_image: Meridian_Logo_2bis.png
 feature_image_alt: null
-project_types:
-  - Community
+project_types: Community
 techstack:
   - Discord
 live_url: null

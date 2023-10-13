@@ -6,7 +6,7 @@ description: Vous aimez la construction et l'aventure ? Venez sur notre serveur 
 slug: minecraft
 author: Obsidian
 draft: false
-date: {}
+date: 
 lastmod: null
 expiryDate: null
 publishDate: null

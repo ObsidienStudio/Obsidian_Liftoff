@@ -4,9 +4,9 @@ import { defineConfig } from 'tinacms';
 const branch = 'master';
 
 export default defineConfig({
-  branch,
   clientId: process.env.TINA_PUBLIC_CLIENT_ID!,
   token: process.env.TINA_TOKEN,
+  branch,
   build: {
     outputFolder: 'admin',
     publicFolder: 'static',
