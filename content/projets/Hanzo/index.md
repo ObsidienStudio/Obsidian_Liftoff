@@ -12,7 +12,8 @@ expiryDate: null
 publishDate: null
 feature_image: hanzo_wallpaper.jpg
 feature_image_alt: hanzo_wallpaper.jpg
-project_types: Obsidian
+project_types:
+  - Obsidian
 techstack:
   - Foundry
   - Dungeondraft

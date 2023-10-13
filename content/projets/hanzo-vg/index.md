@@ -12,7 +12,8 @@ expiryDate: null
 publishDate: null
 feature_image: website.jpg
 feature_image_alt: Website
-project_types: Obsidian
+project_types:
+  - Obsidian
 techstack:
   - 'C#'
   - Piskels
