@@ -53,9 +53,10 @@
 <div class="slider">
   <div class="slide-track">
     {{ $screenshots := (.Site.GetPage "/screenshots").Resources }}
-    {{$o := index (where .Site.Pages ".File.Dir" "/screenshots") 0 }}
-    {{range $screenshots}}
-    <a href="{{.Permalink}}"><img class="caroussel-img slide" src="screenshots/{{.}}" href='screenshots/{{.}}'></a>
+    {{$o := resources.Match "images/screenshots/*.png"}}
+    {{range $o}}
+    {{$o_alter := .Resize "600x webp q50"}}
+    <a href="{{.RelPermalink}}"><img class="caroussel-img slide" src="{{.}}" href='{{.}}'></a>
    {{end}}
   </div>
   </div>
