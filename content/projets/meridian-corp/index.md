@@ -27,4 +27,5 @@ La Meridian Corp, c'est un tas de bons gens qui se retrouve quotidiennement (ou 
 
 Malgré notre ambition de pouvoir accueillir n'importe qui dans notre petite secte, on cherche une ambiance familiale et décontractée pour pouvoir rester humains, même quand l'échelle est dépassée. :)
 
+
 {{< discordLink >}}
