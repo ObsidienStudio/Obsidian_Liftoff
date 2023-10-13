@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup Node
+        run: npm ci
+        
       - name: Build TinaCMS
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
