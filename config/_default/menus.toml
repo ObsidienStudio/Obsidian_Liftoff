@@ -8,7 +8,7 @@
 [[main]]
     # Top-level menu entry
     identifier = "content"
-    name = "Contenu"
+    name = "Plus"
     url = "/posts/"
     weight = 2
 
@@ -26,6 +26,13 @@
     # url = "/posts/subsection/" # Remove url param from subsection/_index.md frontmatter to use full permalink
     parent = "content"
     weight = 3
+
+[[main]]
+    identifier = "jdb"
+    name = "Le lore"
+    url = "/posjdbts/"
+    parent = "content"
+    weight = 2
 
 [[main]]
     identifier = "tags"

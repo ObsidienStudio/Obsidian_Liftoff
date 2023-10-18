@@ -6,3 +6,6 @@ slug: jdb
 draft: false
 
 ---
+
+
+Tout commenca dans La Hype...
