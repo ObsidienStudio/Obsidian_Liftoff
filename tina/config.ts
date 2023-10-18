@@ -9,7 +9,7 @@ export default defineConfig({
   branch,
   build: {
     outputFolder: 'admin',
-    publicFolder: 'assets',
+    publicFolder: 'static',
   },
   media: {
     tina: {
