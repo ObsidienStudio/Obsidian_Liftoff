@@ -1,4 +1,4 @@
-baseURL = 'https://meridian-corp.web.app'
+baseURL = 'https://meridian-corp.org'
 languageCode = 'fr-fr'
 title = 'Meridian Corp'
 theme = 'liftoff'

@@ -32,14 +32,14 @@
     name = "Le lore"
     url = "/posjdbts/"
     parent = "content"
-    weight = 2
+    weight = 4
 
 [[main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
     parent = "content"
-    weight = 4
+    weight = 5
 
 [[main]]
     identifier = "contact"

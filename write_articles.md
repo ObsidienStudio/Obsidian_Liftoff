@@ -15,7 +15,7 @@ Cet outil est très complet et pour le comprendre il faut comprendre Git. Je vou
 Un automatisme s'active alors, regénérant le site et l'envoyant de nouveau sur l'adresse du site internet. Si la régénération échoue, le site ne sera pas mis à jour.
 
 Hugo est le framework (outil) qui nous permet de construire le site. Pour que Hugo fonctionne, il faut respecter ses pré-requis et son fonctionnement. Les voici : 
-- Les fichiers présents dans _/content_ créent des pages ou des listes aux adresses indiquées (content/jeux/dofus/index.md -> meridian-corp.web.app/content/jeux/dofus)
+- Les fichiers présents dans _/content_ créent des pages ou des listes aux adresses indiquées (content/jeux/dofus/index.md -> meridian-corp.org/content/jeux/dofus)
 - Les page seules sont créées a partir des fichiers 'index.md' tandis que les listes de page sont créées a partir des fichiers '_index.md'
 - Les en-têtes des fichiers doivent être renseignées sans quoi les pages ne seront pas publiées
 - Le corps de texte peut être écrit en markdown ou bien en html
