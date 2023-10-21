@@ -4,7 +4,7 @@
     {{ with .Param "project_types" }}
     <div class="project-entry-type">
       {{ range first 1 . }}
-      {{if . eq "Community"}}
+      {{if eq . "Community"}}
       <a class="project-entry-link" href="{{ "projets" | absURL }}/meridian-corp">{{ . }}</a>
       {{else}}
       <a class="project-entry-link" href="{{ "createurs" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
