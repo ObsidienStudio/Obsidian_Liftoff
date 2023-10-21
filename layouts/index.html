@@ -55,6 +55,7 @@
     {{ $screenshots := (.Site.GetPage "/screenshots").Resources }}
     {{$o := resources.Match "uploads/screenshots/*.png"}}
     {{range $o}}
+    {{.}}
     {{$o_alter := .Resize "600x webp q50"}}
     <a href="{{.RelPermalink}}"><img class="caroussel-img slide" src="{{.}}" href='{{.}}'></a>
    {{end}}
