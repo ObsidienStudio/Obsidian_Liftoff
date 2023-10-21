@@ -1,6 +1,6 @@
 {{ if or (.PrevInSection) (.NextInSection) }}
   <section>
-    <h2>Read Next</h2>
+    <h2>Prochain article</h2>
     <div class="single-next-previous">
       {{ with .PrevInSection }}
         <a class="previous" href="{{.Permalink}}">&laquo; {{ .Title }}</a>

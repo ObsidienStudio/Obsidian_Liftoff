@@ -3,8 +3,10 @@ title: Le site
 seo_title: Le site
 slug: website
 date: 2023-10-09T18:20:00.000Z
+toc: true
 author:
   - obsidian
+series: null
 ---
 
 ### 1 semaine

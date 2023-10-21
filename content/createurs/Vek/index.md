@@ -19,4 +19,4 @@ published: true
 description: Monteur et Administrateur.
 ---
 
-Veko, Yannis Perrot, est 
+Veko, Yannis P, est 

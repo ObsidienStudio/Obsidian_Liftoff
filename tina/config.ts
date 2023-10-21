@@ -92,6 +92,11 @@ export default defineConfig({
             label: 'Sommaire',
           },
           {
+            type: 'boolean',
+            name: 'toc',
+            label: 'Toc',
+          },
+          {
             type: 'string',
             name: 'description',
             label: 'Description',
