@@ -14,7 +14,7 @@
 
 [[main]]
     identifier = "posts"
-    name = "Tous les articles"
+    name = "La redac"
     url = "/posts/"
     parent = "content"
     weight = 2
