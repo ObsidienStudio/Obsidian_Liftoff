@@ -30,7 +30,7 @@
 [[main]]
     identifier = "jdb"
     name = "Le lore"
-    url = "/posjdbts/"
+    url = "/jdb/"
     parent = "content"
     weight = 4
 
