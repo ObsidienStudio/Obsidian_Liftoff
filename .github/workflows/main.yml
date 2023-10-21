@@ -22,7 +22,7 @@ jobs:
         run: npx tinacms build
 
       - name: Copy images
-        run: cp -r /static/uploads/screeshots assets/images
+        run: cp -r /static/uploads/screenshots assets/images
 
 
       - name: Hugo setup

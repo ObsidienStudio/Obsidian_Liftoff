@@ -65,4 +65,8 @@ node_modules/
 # dotenv environment variables file
 .env
 
+#generated 
+resources/_gen
+
 node_modules
+resources/_gen/assets/scss/scss/main.scss_3f90599f3717b4a4920df16fdcadce3d.content
