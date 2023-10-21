@@ -21,7 +21,8 @@ jobs:
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: npx tinacms build
 
-      - name: Copy images
+      - name: Copy imagessteps:
+        uses: actions/checkout@v2
         run: cp -r /static/uploads/screenshots assets/images
 
 
