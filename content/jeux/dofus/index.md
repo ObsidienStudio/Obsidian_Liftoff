@@ -18,11 +18,15 @@ tags:
 Dofus quel jeu de foufi
 
 Plus sérieusement c'est là un jeu que j'ai sous-estimé bien trop longtemps.\
-On se moquait même à l'époque de joueurs dofus mais aujourd'hui je peux dire que je n'ai jamais eue si tort. Le jeu est une ode aux joueurs de MMO, avec des récompenses pour les plus grand grindeur, un système de métier complet et un besoin constant de la communauté la rendant dynamique.\
-Mais aussi au RPG, avec un système de caractéristique et des sorts divers permettant de nombreux builds et configuration d'équipe (19 classes, ça en fait des stratégies de groupe)\
-Et enfin au tactical par ce qu'ils ont pensé a tellement de stratégies sur la base du combat par case. Leur système en Point d'action et Point de mouvement permet la plus grande liberté en combat des jeux de plateaux et d'être plus stratégique et préparés que certains action RPG. Le temps deviens précieux car les tours ne durent qu'une dizaine de seconde !\
-\
+On se moquait même à l'époque de joueurs dofus mais aujourd'hui je peux dire que je n'ai jamais eue si tort. 
 
+Le jeu est une ode aux joueurs de MMO, avec des récompenses pour les plus grand grindeur, un système de métier complet et un besoin constant de la communauté la rendant dynamique.
+
+\
+Mais aussi au RPG, avec un système de caractéristique et des sorts divers permettant de nombreux builds et configuration d'équipe (19 classes, ça en fait des stratégies de groupe)
+
+\
+Et enfin au tactical par ce qu'ils ont pensé a tellement de stratégies sur la base du combat par case. Leur système en Point d'action et Point de mouvement permet la plus grande liberté en combat des jeux de plateaux et d'être plus stratégique et préparés que certains action RPG. Le temps deviens précieux car les tours ne durent qu'une dizaine de seconde !
 
 Dans Dofus on incarne une âme qui est douée de pouvoirs conférés par les dieux eux mêmes ! \
 Retrouvez les dofus et explorez le monde des douzes ! C'est là la promesse simple mais efficace de Dofus
