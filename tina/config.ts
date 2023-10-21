@@ -251,6 +251,11 @@ export default defineConfig({
             label: 'Slug',
           },
           {
+            type: 'boolean',
+            name: 'toc',
+            label: 'Table de contenu ?',
+          },
+          {
             type: 'string',
             name: 'feature_image',
             label: 'Image tuile',

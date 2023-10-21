@@ -392,6 +392,7 @@ export type Projets = Node & Document & {
   summary?: Maybe<Scalars['String']['output']>;
   description?: Maybe<Scalars['String']['output']>;
   slug?: Maybe<Scalars['String']['output']>;
+  toc?: Maybe<Scalars['Boolean']['output']>;
   feature_image?: Maybe<Scalars['String']['output']>;
   image?: Maybe<Scalars['String']['output']>;
   date?: Maybe<Scalars['String']['output']>;
@@ -410,6 +411,7 @@ export type ProjetsFilter = {
   summary?: InputMaybe<StringFilter>;
   description?: InputMaybe<StringFilter>;
   slug?: InputMaybe<StringFilter>;
+  toc?: InputMaybe<BooleanFilter>;
   feature_image?: InputMaybe<StringFilter>;
   image?: InputMaybe<ImageFilter>;
   date?: InputMaybe<DatetimeFilter>;
@@ -751,6 +753,7 @@ export type ProjetsMutation = {
   summary?: InputMaybe<Scalars['String']['input']>;
   description?: InputMaybe<Scalars['String']['input']>;
   slug?: InputMaybe<Scalars['String']['input']>;
+  toc?: InputMaybe<Scalars['Boolean']['input']>;
   feature_image?: InputMaybe<Scalars['String']['input']>;
   image?: InputMaybe<Scalars['String']['input']>;
   date?: InputMaybe<Scalars['String']['input']>;
@@ -798,7 +801,7 @@ export type AboutPartsFragment = { __typename: 'About', title: string, seo_title
 
 export type PostPartsFragment = { __typename: 'Post', title: string, seo_title: string, summary?: string | null, toc?: boolean | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, tags?: Array<string | null> | null, categories?: Array<string | null> | null, body?: any | null };
 
-export type ProjetsPartsFragment = { __typename: 'Projets', title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, feature_image?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, project_types?: Array<string | null> | null, tech_stack?: Array<string | null> | null, body?: any | null };
+export type ProjetsPartsFragment = { __typename: 'Projets', title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, toc?: boolean | null, feature_image?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, project_types?: Array<string | null> | null, tech_stack?: Array<string | null> | null, body?: any | null };
 
 export type ContactPartsFragment = { __typename: 'Contact', title: string, seo_title: string, description?: string | null };
 
@@ -851,7 +854,7 @@ export type ProjetsQueryVariables = Exact<{
 }>;
 
 
-export type ProjetsQuery = { __typename?: 'Query', projets: { __typename: 'Projets', id: string, title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, feature_image?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, project_types?: Array<string | null> | null, tech_stack?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type ProjetsQuery = { __typename?: 'Query', projets: { __typename: 'Projets', id: string, title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, toc?: boolean | null, feature_image?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, project_types?: Array<string | null> | null, tech_stack?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type ProjetsConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -863,7 +866,7 @@ export type ProjetsConnectionQueryVariables = Exact<{
 }>;
 
 
-export type ProjetsConnectionQuery = { __typename?: 'Query', projetsConnection: { __typename?: 'ProjetsConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ProjetsConnectionEdges', cursor: string, node?: { __typename: 'Projets', id: string, title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, feature_image?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, project_types?: Array<string | null> | null, tech_stack?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type ProjetsConnectionQuery = { __typename?: 'Query', projetsConnection: { __typename?: 'ProjetsConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ProjetsConnectionEdges', cursor: string, node?: { __typename: 'Projets', id: string, title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, toc?: boolean | null, feature_image?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, project_types?: Array<string | null> | null, tech_stack?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type ContactQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -976,6 +979,7 @@ export const ProjetsPartsFragmentDoc = gql`
   summary
   description
   slug
+  toc
   feature_image
   image
   date

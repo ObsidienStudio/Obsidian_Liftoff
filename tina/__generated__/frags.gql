@@ -30,6 +30,7 @@ fragment ProjetsParts on Projets {
   summary
   description
   slug
+  toc
   feature_image
   image
   date

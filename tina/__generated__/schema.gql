@@ -217,6 +217,7 @@ type Projets implements Node & Document {
   summary: String
   description: String
   slug: String
+  toc: Boolean
   feature_image: String
   image: String
   date: String
@@ -235,6 +236,7 @@ input ProjetsFilter {
   summary: StringFilter
   description: StringFilter
   slug: StringFilter
+  toc: BooleanFilter
   feature_image: StringFilter
   image: ImageFilter
   date: DatetimeFilter
@@ -450,6 +452,7 @@ input ProjetsMutation {
   summary: String
   description: String
   slug: String
+  toc: Boolean
   feature_image: String
   image: String
   date: String
