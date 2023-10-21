@@ -2,7 +2,7 @@
 date: 2023-05-10T14:52:30.000Z
 title: Veko
 seo_title: Veko
-summary: Monteur et Administrateur. 1
+summary: Monteur et Administrateur.
 slug: veko
 author: Vek
 draft: false

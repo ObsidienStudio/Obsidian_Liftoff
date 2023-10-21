@@ -1,6 +1,8 @@
 ---
 title: Salutations voyageurs !
 seo_title: À propos
+slug: about
+type: about
 description: Qui sont ces mystérieux personnages ? Voyons cela tout de suite...
 ---
 
