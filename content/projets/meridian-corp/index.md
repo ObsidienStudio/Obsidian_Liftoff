@@ -1,24 +1,14 @@
 ---
-draft: false
-date: 2023-07-20T08:52:30.000Z
 title: Meridian Corp
 seo_title: Meridian Corp
-summary: 'X '
+summary: L'équilibre c'est se sentir à sa place
 description: Meridian Corp est un projet de communauté en développement
 slug: meridian-corp
-author: Martin Gasque
-lastmod: null
-expiryDate: null
-publishDate: null
-feature_image: Meridian_Logo_2bis.png
-feature_image_alt: null
+date: 2023-07-20T08:52:30.000Z
+author:
+  - Martin Gasque
 project_types:
   - Community
-techstack:
-  - Discord
-live_url: null
-source_url: null
-published: true
 ---
 
 Notre bébé à nous, notre ilot de fraîcheur.
@@ -27,5 +17,4 @@ La Meridian Corp, c'est un tas de bons gens qui se retrouve quotidiennement (ou 
 
 Malgré notre ambition de pouvoir accueillir n'importe qui dans notre petite secte, on cherche une ambiance familiale et décontractée pour pouvoir rester humains, même quand l'échelle est dépassée. :)
 
-
-{{< discordLink >}}
+{{\< discordLink >}}
