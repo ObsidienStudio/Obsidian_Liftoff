@@ -41,6 +41,7 @@
 <div class="single-container">
   <div class="single-feature-img">{{ partial "general/feature-image.html" . }}</div>
   <article class="markdown">
+    {{ partial "posts/toc.html" . }}
     {{ .Content }}
   </article>
 </div>

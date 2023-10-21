@@ -1,10 +1,13 @@
 <!-- Reusable template for table of contents (i.e. start or sidebar of posts single pages) -->
 {{ if .Params.toc }}
-  <aside class="toc">
+
+
+  <aside class="toc" {{if eq "projets" .Section}} style="height: auto;position: relative; margin-bottom: 5rem;" {{ end }}>
     <div id="js-toc-toggle">
       <h2 class="toc-header">Table de contenu</h2>
       <span class="toc-drop-icon">&blacktriangledown;</span>
     </div>
     <div id="js-toc-contents" class="toc-contents">{{ .TableOfContents }}</div>
   </aside>
+
 {{ end }}
