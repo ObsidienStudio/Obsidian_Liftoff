@@ -21,6 +21,10 @@ jobs:
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: npx tinacms build
 
+      - name: Copy images
+        run: cp -r /static/uploads/screeshots assets/images
+
+
       - name: Hugo setup
         uses: peaceiris/actions-hugo@v2
         with:
