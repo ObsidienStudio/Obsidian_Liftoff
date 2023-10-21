@@ -220,7 +220,7 @@ type Projets implements Node & Document {
   image: String
   date: String
   author: [String]
-  project_types: String
+  project_types: [String]
   tech_stack: [String]
   body: JSON
   id: ID!
@@ -451,7 +451,7 @@ input ProjetsMutation {
   image: String
   date: String
   author: [String]
-  project_types: String
+  project_types: [String]
   tech_stack: [String]
   body: JSON
 }

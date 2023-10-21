@@ -280,6 +280,7 @@ var config_default = defineConfig({
             label: "Type de projet",
             name: "project_types",
             type: "string",
+            list: true,
             options: [
               {
                 value: "obsidian",

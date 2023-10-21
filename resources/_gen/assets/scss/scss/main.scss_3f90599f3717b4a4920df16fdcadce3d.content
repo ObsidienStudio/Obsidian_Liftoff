@@ -1071,6 +1071,9 @@ body {
   .markdown p > img, .markdown figure > img {
     max-width: 100%;
     height: auto; }
+  .markdown p img {
+    display: flex;
+    margin: auto; }
   .markdown figure {
     margin-left: 0;
     margin-right: 0; }
