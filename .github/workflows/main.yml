@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Copy images        
+        run: cp -r static/uploads/screenshots assets/images
+
       - name: Setup Node
         run: npm ci
         
@@ -21,9 +24,6 @@ jobs:
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: npx tinacms build
 
-      - name: Copy imagessteps:
-        uses: actions/checkout@v2
-        run: cp -r /static/uploads/screenshots assets/images
 
 
       - name: Hugo setup
