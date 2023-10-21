@@ -4,7 +4,7 @@
     {{ with .Param "project_types" }}
     <div class="project-entry-type">
       {{ range first 1 . }}
-        <a class="project-entry-link" href="{{ "project_types" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
+        <a class="project-entry-link" href="createurs/{{ . | urlize }}/">{{ . }}</a>
       {{ end }}
     </div>
     {{ end }}
