@@ -323,6 +323,7 @@ export type Post = Node & Document & {
   title: Scalars['String']['output'];
   seo_title: Scalars['String']['output'];
   summary?: Maybe<Scalars['String']['output']>;
+  toc?: Maybe<Scalars['Boolean']['output']>;
   description?: Maybe<Scalars['String']['output']>;
   slug?: Maybe<Scalars['String']['output']>;
   image?: Maybe<Scalars['String']['output']>;
@@ -334,6 +335,11 @@ export type Post = Node & Document & {
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
+};
+
+export type BooleanFilter = {
+  eq?: InputMaybe<Scalars['Boolean']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 export type ImageFilter = {
@@ -355,6 +361,7 @@ export type PostFilter = {
   title?: InputMaybe<StringFilter>;
   seo_title?: InputMaybe<StringFilter>;
   summary?: InputMaybe<StringFilter>;
+  toc?: InputMaybe<BooleanFilter>;
   description?: InputMaybe<StringFilter>;
   slug?: InputMaybe<StringFilter>;
   image?: InputMaybe<ImageFilter>;
@@ -725,6 +732,7 @@ export type PostMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   seo_title?: InputMaybe<Scalars['String']['input']>;
   summary?: InputMaybe<Scalars['String']['input']>;
+  toc?: InputMaybe<Scalars['Boolean']['input']>;
   description?: InputMaybe<Scalars['String']['input']>;
   slug?: InputMaybe<Scalars['String']['input']>;
   image?: InputMaybe<Scalars['String']['input']>;
@@ -785,7 +793,7 @@ export type JeuxMutation = {
 
 export type AboutPartsFragment = { __typename: 'About', title: string, seo_title: string, slug?: string | null, description?: string | null, body?: any | null };
 
-export type PostPartsFragment = { __typename: 'Post', title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, tags?: Array<string | null> | null, categories?: Array<string | null> | null, body?: any | null };
+export type PostPartsFragment = { __typename: 'Post', title: string, seo_title: string, summary?: string | null, toc?: boolean | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, tags?: Array<string | null> | null, categories?: Array<string | null> | null, body?: any | null };
 
 export type ProjetsPartsFragment = { __typename: 'Projets', title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, project_types?: string | null, tech_stack?: Array<string | null> | null, body?: any | null };
 
@@ -821,7 +829,7 @@ export type PostQueryVariables = Exact<{
 }>;
 
 
-export type PostQuery = { __typename?: 'Query', post: { __typename: 'Post', id: string, title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, tags?: Array<string | null> | null, categories?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type PostQuery = { __typename?: 'Query', post: { __typename: 'Post', id: string, title: string, seo_title: string, summary?: string | null, toc?: boolean | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, tags?: Array<string | null> | null, categories?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type PostConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -833,7 +841,7 @@ export type PostConnectionQueryVariables = Exact<{
 }>;
 
 
-export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename: 'Post', id: string, title: string, seo_title: string, summary?: string | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, tags?: Array<string | null> | null, categories?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename: 'Post', id: string, title: string, seo_title: string, summary?: string | null, toc?: boolean | null, description?: string | null, slug?: string | null, image?: string | null, date?: string | null, author?: Array<string | null> | null, tags?: Array<string | null> | null, categories?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type ProjetsQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -946,6 +954,7 @@ export const PostPartsFragmentDoc = gql`
   title
   seo_title
   summary
+  toc
   description
   slug
   image

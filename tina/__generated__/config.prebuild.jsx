@@ -2,9 +2,9 @@
 import { defineConfig } from "tinacms";
 var branch = "master";
 var config_default = defineConfig({
-  branch,
   clientId: process.env.TINA_PUBLIC_CLIENT_ID,
   token: process.env.TINA_TOKEN,
+  branch,
   build: {
     outputFolder: "admin",
     publicFolder: "static"
@@ -12,7 +12,7 @@ var config_default = defineConfig({
   media: {
     tina: {
       mediaRoot: "uploads",
-      publicFolder: "static"
+      publicFolder: "assets"
     }
   },
   schema: {
@@ -85,6 +85,11 @@ var config_default = defineConfig({
             type: "string",
             name: "summary",
             label: "Sommaire"
+          },
+          {
+            type: "boolean",
+            name: "toc",
+            label: "Toc"
           },
           {
             type: "string",

@@ -151,6 +151,7 @@ type Post implements Node & Document {
   title: String!
   seo_title: String!
   summary: String
+  toc: Boolean
   description: String
   slug: String
   image: String
@@ -162,6 +163,11 @@ type Post implements Node & Document {
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
+}
+
+input BooleanFilter {
+  eq: Boolean
+  exists: Boolean
 }
 
 input ImageFilter {
@@ -183,6 +189,7 @@ input PostFilter {
   title: StringFilter
   seo_title: StringFilter
   summary: StringFilter
+  toc: BooleanFilter
   description: StringFilter
   slug: StringFilter
   image: ImageFilter
@@ -424,6 +431,7 @@ input PostMutation {
   title: String
   seo_title: String
   summary: String
+  toc: Boolean
   description: String
   slug: String
   image: String

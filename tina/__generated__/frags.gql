@@ -12,6 +12,7 @@ fragment PostParts on Post {
   title
   seo_title
   summary
+  toc
   description
   slug
   image
