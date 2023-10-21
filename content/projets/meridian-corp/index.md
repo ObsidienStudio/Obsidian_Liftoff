@@ -5,6 +5,7 @@ summary: L'équilibre c'est se sentir à sa place
 description: Meridian Corp est un projet de communauté en développement
 slug: meridian-corp
 date: 2023-07-20T08:52:30.000Z
+feature_image: Meridian_Logo_2bis.png
 author:
   - Martin Gasque
 project_types:

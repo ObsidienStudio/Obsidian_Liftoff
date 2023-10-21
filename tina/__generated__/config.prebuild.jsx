@@ -243,6 +243,11 @@ var config_default = defineConfig({
             label: "Slug"
           },
           {
+            type: "string",
+            name: "feature_image",
+            label: "Image tuile"
+          },
+          {
             type: "image",
             name: "image",
             label: "Ajout image"
