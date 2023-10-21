@@ -151,3 +151,8 @@ a:not(.menu-link):not(.btn-primary):not(.btn-secondary)[class]:hover::before {
     margin: 0px 7px;
     border-radius: 10px;
 }
+
+.markdown img{
+    display: flex;
+    margin: auto;
+}
