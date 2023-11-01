@@ -16,7 +16,6 @@ buildDrafts = false # Default
 buildExpired = false # Default 
 buildFuture = false # Default
 canonifyURLs = false # Default
-defaultContentLanguage = 'en' # Default
 disableAliases = true # Set to true if using server (Netlify, .htaccess) for redirects instead of Hugo
 disableKinds = [] # Default
 enableEmoji = true # Use Emojis in content
@@ -157,6 +156,27 @@ theme = 'liftoff'
   quality = 75
   resampleFilter = 'Box'
 
+defaultContentLanguage = 'fr' # Default
+defaultContentLanguageInSubdir = false
+[languages]
+  [languages.fr]
+    contentDir = 'content/fr'
+    disabled = false
+    languageCode = 'fr-FR'
+    languageDirection = 'ltr'
+    languageName = 'Français'
+    weight = 1
+    [languages.fr.params]
+      subtitle = 'Reference, tutoriels et explications'
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'
 ### Hugo Pipes
 [minify]
   disableCSS = false

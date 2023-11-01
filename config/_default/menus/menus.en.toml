@@ -1,0 +1,54 @@
+[[main]]
+    # Top-level menu entry
+    identifier = "projets"
+    name = "Project"
+    url = "/projets/"
+    weight = 1
+
+[[main]]
+    # Top-level menu entry
+    identifier = "content"
+    name = "More"
+    url = "/posts/"
+    weight = 2
+
+[[main]]
+    identifier = "posts"
+    name = "Redaction"
+    url = "/posts/"
+    parent = "content"
+    weight = 2
+
+[[main]]
+    identifier = "jeux"
+    name = "Our games"
+    url = "/jeux/"
+    # url = "/posts/subsection/" # Remove url param from subsection/_index.md frontmatter to use full permalink
+    parent = "content"
+    weight = 3
+
+[[main]]
+    identifier = "jdb"
+    name = "The lore"
+    url = "/jdb/"
+    parent = "content"
+    weight = 4
+
+[[main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    parent = "content"
+    weight = 5
+
+[[main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[[main]]
+    identifier = "about"
+    name = "Us"
+    url = "/about/"
+    weight = 5
