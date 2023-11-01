@@ -160,7 +160,7 @@ defaultContentLanguage = 'fr' # Default
 defaultContentLanguageInSubdir = false
 [languages]
   [languages.fr]
-    contentDir = 'content/fr'
+    contentDir = 'content'
     disabled = false
     languageCode = 'fr-FR'
     languageDirection = 'ltr'
