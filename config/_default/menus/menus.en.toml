@@ -2,27 +2,27 @@
     # Top-level menu entry
     identifier = "projets"
     name = "Project"
-    url = "/projets/"
+    url = "/en/projets/"
     weight = 1
 
 [[main]]
     # Top-level menu entry
     identifier = "content"
     name = "More"
-    url = "/posts/"
+    url = "/en/posts/"
     weight = 2
 
 [[main]]
     identifier = "posts"
     name = "Redaction"
-    url = "/posts/"
+    url = "/en/posts/"
     parent = "content"
     weight = 2
 
 [[main]]
     identifier = "jeux"
     name = "Our games"
-    url = "/jeux/"
+    url = "/en/jeux/"
     # url = "/posts/subsection/" # Remove url param from subsection/_index.md frontmatter to use full permalink
     parent = "content"
     weight = 3
@@ -30,25 +30,25 @@
 [[main]]
     identifier = "jdb"
     name = "The lore"
-    url = "/jdb/"
+    url = "/en/jdb/"
     parent = "content"
     weight = 4
 
 [[main]]
     identifier = "tags"
     name = "Tags"
-    url = "/tags/"
+    url = "/en/tags/"
     parent = "content"
     weight = 5
 
 [[main]]
     identifier = "contact"
     name = "Contact"
-    url = "/contact/"
+    url = "/en/contact/"
     weight = 4
 
 [[main]]
     identifier = "about"
     name = "Us"
-    url = "/about/"
+    url = "/en/about/"
     weight = 5

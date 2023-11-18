@@ -4,6 +4,9 @@ languageCode = 'fr-FR' # Default
 timeZone = 'Europe/Paris' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 title = 'Meridian Corp' # Site title used throughout site
 
+defaultContentLanguage = 'fr' # Default
+defaultContentLanguageInSubdir = false
+
 ### SEO, Analytics & 3rd-party
 enableRobotsTXT = true # To overwrite the theme's robots.txt, add your own in the /layouts/ directory
 rssLimit = -1 # -1 is unlimited RSS entries
@@ -156,11 +159,9 @@ theme = 'liftoff'
   quality = 75
   resampleFilter = 'Box'
 
-defaultContentLanguage = 'fr' # Default
-defaultContentLanguageInSubdir = false
 [languages]
   [languages.fr]
-    contentDir = 'content'
+    contentDir = 'content/fr'
     disabled = false
     languageCode = 'fr-FR'
     languageDirection = 'ltr'
