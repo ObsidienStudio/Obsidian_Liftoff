@@ -1,20 +1,17 @@
 ---
-title: Howdy wonderer !
-seo_title: About
+title: Salutations voyageurs !
+seo_title: À propos
 slug: about
 type: about
-description: Who are thoses freaks ? Let's find out...
+description: Qui sont ces mystérieux personnages ? Voyons cela tout de suite...
 ---
 
+Meridian Corp is a community of content and video game creators, gamers and players who met through gaming and founded a community that anyone can join.
 
-Meridian Corp is a content creator community made from gamers and friends
+On this basis, from game to game, we recruit guild, company or squad members who seem to belong here and are looking for a place somewhere.
 
-Everyone is free to join to reach new highs together
+Beyond that, we're a handful of creators who work daily to bring this community to life, by creating servers for the various multiplayer games, and by offering advice sessions when needed, whether it's to pass a diamond on League of Legends or to troubleshoot your computer on a bad day.
 
-We are recruiting guild members, head-shotters, tournament fighters and much more, all that find a fit in our space and want to stay around
+Join us and let's see how we can create events that suit us.
 
-We are also a few content creators making animations, hosting servers for games and providing advice for getting gud
-
-Come join us and find together how to create events that is made by and for us
-
-The team will always be on the watch for any upcoming thing on the server and can be contacted anytime :
+Our team is made up of some of the most amazing and hilarious members of the industry, such as :
