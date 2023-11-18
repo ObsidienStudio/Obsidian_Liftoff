@@ -2,8 +2,8 @@
 date: 2023-05-10T14:52:30.000Z
 title: Seum
 seo_title: Seum
-summary: Graphisme et Marketing de la communauté.
-description: Graphisme et Marketing de la communauté.
+summary: Marketing and graphic design for the community.
+description: Marketing and graphic design for the community.
 slug: Seum
 author: Seum
 draft: false

@@ -16,12 +16,17 @@
           {{ $s_cta = . }}
         {{ end }}
         <a class="btn-primary"
-           href="{{ with $p_cta }}{{ . | relURL }}{{ else }}{{ "about" | relURL }}{{ end }}">
-           {{ if $p_cta }}{{ with .Site.GetPage $p_cta }}{{ .LinkTitle }}{{ end }}{{ else }}À propos{{ end }}
+           href="{{ with $p_cta }}{{ . | relURL }}{{ else }}{{ "about" | relLangURL }}{{ end }}">
+           {{ if $p_cta }}{{ with .Site.GetPage $p_cta }}{{ .LinkTitle }}{{ end }}{{ else }}{{ with .GetPage "about/index.md" }}
+           {{ .Title }}
+         {{ end }}
+         {{ end }}
         </a>
         <a class="btn-secondary"
-           href="{{ with $s_cta }}{{ . | relURL }}{{ else }}{{ "projets" | relURL }}{{ end }}">
-           {{ if $s_cta }}{{ with .Site.GetPage $s_cta }}{{ .LinkTitle }}{{ end }}{{ else }}Projets{{ end }}
+           href="{{ with $s_cta }}{{ . | relURL }}{{ else }}{{ "projets" | relLangURL }}{{ end }}">
+           {{ if $s_cta }}{{ with .Site.GetPage $s_cta }}{{ .LinkTitle }}{{ end }}{{ else }}{{ with .GetPage "projets/_index.md" }}
+           {{ .Title }}
+         {{ end }}{{ end }}
         </a>
       </div>
     </div>
@@ -49,14 +54,14 @@
   {{/*  Shortcodes from page content  */}}
   <section>
   
-    <h2>Les screen de l'équipe</h2>
+    <h2>Les screens de l'équipe</h2>
 <div class="slider">
   <div class="slide-track">
     {{ $screenshots := (.Site.GetPage "/screenshots").Resources }}
     {{$o := resources.Match "uploads/screenshots/*.png"}}
     {{range $o}}
     {{$o_alter := .Resize "600x webp q50"}}
-    <a href="{{.RelPermalink}}"><img class="caroussel-img slide" src="{{.}}" href='{{.}}'></a>
+    <a href='{{.Permalink}}'><img class="caroussel-img slide" src="{{.Permalink}}" href='{{.}}'></a>
    {{end}}
   </div>
   </div>

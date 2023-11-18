@@ -1,9 +1,9 @@
 ---
-title: Salutations voyageurs !
-seo_title: À propos
+title: About us
+seo_title: About us
 slug: about
 type: about
-description: Qui sont ces mystérieux personnages ? Voyons cela tout de suite...
+description: Who are thoses freaks ? Let's find out...
 ---
 
 Meridian Corp is a community of content and video game creators, gamers and players who met through gaming and founded a community that anyone can join.

@@ -1,5 +1,5 @@
 ---
-title: Salutations voyageurs !
+title: À propos
 seo_title: À propos
 slug: about
 type: about

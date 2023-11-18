@@ -16,7 +16,7 @@ techstack: null
 live_url: null
 source_url: null
 published: true
-description: Monteur et Administrateur.
+description: Editor and administrator.
 ---
 
 Veko, Yannis P, is

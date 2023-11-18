@@ -1,7 +1,7 @@
 ---
 type: contact
-title: Ce martien essaie de communiquer...
+title: Thoses aliens are trying to reach us
 seo_title: Contact
-description: Envoyez nous un mail ! On le lira avec grande attention.
+description: Send us an email !
 ---
 

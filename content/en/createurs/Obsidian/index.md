@@ -1,7 +1,7 @@
 ---
 title: Obsidian
 seo_title: Obsidian Glover
-summary: 'Créateur de la structure Meridian.'
+summary: Creator of the Meridian structure
 slug: obsidian
 feature_image: Obsidian_Logo.png
 ---

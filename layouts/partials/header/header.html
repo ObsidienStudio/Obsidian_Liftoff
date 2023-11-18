@@ -1,7 +1,7 @@
 <header class="container">
   <nav class="main-nav" id="js-navbar">
     <div>
-      <a class="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      <a class="logo" href="{{ site.Home.Permalink  }}">{{ .Site.Title }}</a>
       <div class="logo-bar"></div>
     </div>
     <ul class="menu" id="js-menu">
@@ -24,6 +24,15 @@
       </li>
       {{ end }} {{ end }}
       <li class="menu-item--align">
+        <!-- <div class="langs">
+          <ul>
+{{ range $.Site.Home.AllTranslations }}
+<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+{{ end }}
+</ul>
+
+
+        </div> -->
         <div class="switch">
           <input class="switch-input" type="checkbox" id="themeSwitch" />
           <label aria-hidden="true" class="switch-label" for="themeSwitch"
