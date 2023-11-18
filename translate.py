@@ -1,5 +1,6 @@
 import os
 import requests
+import re
 
 # Function to create a directory structure in the destination directory
 def create_directory_structure(source_dir, dest_dir):
@@ -12,6 +13,12 @@ def create_directory_structure(source_dir, dest_dir):
 
 # Function to translate a file using DeepL API
 def translate_file(file_path, target_language='EN', auth_key='81580059-dfcc-8cdb-48ac-fe80c6e11baa:fx'):
+    translated_file_path = file_path.replace(source_directory, target_directory)
+    if os.path.exists(translated_file_path):
+        print(f"File '{file_path}' already translated. Skipping...")
+        with open(translated_file_path, 'r', encoding='utf-8') as translated_file:
+            return translated_file.read()
+        
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
@@ -24,6 +31,21 @@ def translate_file(file_path, target_language='EN', auth_key='81580059-dfcc-8cdb
             if front_matter_end != -1:
                 front_matter = content[:front_matter_end + len(front_matter_delimiter)]
                 content = content[front_matter_end + len(front_matter_delimiter):]
+        
+        summary_regex = r'summary:\s*\"(.*?)\"'
+        description_regex = r'description:\s*\"(.*?)\"'
+
+        def translate_field(field_value):
+            translated_value = translate_text(field_value, target_language, auth_key)
+            return f'"{translated_value}"' if translated_value else '""'
+
+        if re.search(summary_regex, front_matter, re.IGNORECASE):
+            translated_summary = translate_field(re.search(summary_regex, front_matter, re.IGNORECASE).group(1))
+            front_matter = re.sub(summary_regex, f'summary: {translated_summary}', front_matter, flags=re.IGNORECASE)
+
+        if re.search(description_regex, front_matter, re.IGNORECASE):
+            translated_description = translate_field(re.search(description_regex, front_matter, re.IGNORECASE).group(1))
+            front_matter = re.sub(description_regex, f'description: {translated_description}', front_matter, flags=re.IGNORECASE)
 
         # Translate the content using DeepL API
         url = "https://api-free.deepl.com/v2/translate"
@@ -51,8 +73,6 @@ def duplicate_png_files(source_dir, dest_dir):
             if file.endswith('.png'):
                 source_file_path = os.path.join(root, file)
                 dest_file_path = source_file_path.replace(source_dir, dest_dir)
-                if not os.path.exists(dest_file_path):
-                    os.makedirs(dest_file_path)
                 dest_file_path = os.path.join(dest_file_path, file)
                 with open(source_file_path, 'rb') as src, open(dest_file_path, 'wb') as dst:
                     dst.write(src.read())
