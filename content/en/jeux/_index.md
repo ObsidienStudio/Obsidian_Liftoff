@@ -1,8 +1,9 @@
 ---
-categories: '- Jeux'
+categories: 
+    - 'Jeux'
 date: 
-title: Nos jeux
-summary: Les jeux auxquels on joue et comment nous rejoindre !
-description: Catégorie des jeux de la Meridian Corp.
+title: Our games
+summary: The games we play and how to reach us !
+description: The list of the games we play
 published: true
 ---

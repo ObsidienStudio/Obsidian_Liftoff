@@ -1,6 +1,6 @@
 ---
-title: Journal de bord
-seo_title: journal-de-bord
+title: Lorebook
+seo_title: Lorebook
 ---
 
 Today, Meridian Corp is a fast-growing group, but that wasn't always the case...

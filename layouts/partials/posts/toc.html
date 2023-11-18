@@ -4,7 +4,7 @@
 
   <aside class="toc" {{if eq "projets" .Section}} style="height: auto;position: relative; margin-bottom: 5rem;" {{ end }}>
     <div id="js-toc-toggle">
-      <h2 class="toc-header">Table de contenu</h2>
+      <h2 class="toc-header">{{.Site.Params.content_table}}</h2>
       <span class="toc-drop-icon">&blacktriangledown;</span>
     </div>
     <div id="js-toc-contents" class="toc-contents">{{ .TableOfContents }}</div>

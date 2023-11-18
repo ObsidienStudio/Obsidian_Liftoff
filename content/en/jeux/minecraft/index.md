@@ -1,8 +1,8 @@
 ---
 title: Minecraft
 seo_title: Minecraft
-summary: Vous aimez la construction et l'aventure ? Venez sur notre serveur Minecraft !
-description: Vous aimez la construction et l'aventure ? Venez sur notre serveur Minecraft !
+summary: You like building and adventure ? Come on hop in our minecraft server !
+description: You like building and adventure ? Come on hop in our minecraft server !
 slug: minecraft
 author: Obsidian
 draft: false

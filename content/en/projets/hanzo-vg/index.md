@@ -1,13 +1,13 @@
 ---
-title: Hanzo - Le jeu vidéo
-seo_title: Hanzo - Le jeu vidéo
-summary: Adaptation du Jeu de rôle en jeu vidéo.
-description: Adaptation du Jeu de rôle en jeu vidéo.
+title: Hanzo - The video-game
+seo_title: Hanzo - The video-game
+summary: Adaptation from the role playing game to a video game.
+description: Adaptation from the role playing game to a video game.
 slug: hanzo-vg
 feature_image: website.jpg
 date: 2023-02-20T08:52:30.000Z
 author:
-  - John Doe
+  - Obsidian
 project_types:
   - Obsidian
 ---

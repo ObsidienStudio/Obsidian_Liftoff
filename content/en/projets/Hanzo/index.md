@@ -1,14 +1,14 @@
 ---
 title: Hanzo
 seo_title: Hanzo
-summary: Premier projet de jeu de rôle.
-description: Une aventure de ninja et d'automates !
+summary: First role playing game project.
+description: An adventure of ninja and mechas !
 slug: hanzo
 toc: true
 feature_image: hanzo_wallpaper.jpg
 date: 2022-05-10T14:52:30.000Z
 author:
-  - jeux
+  - Obsidian
 project_types:
   - Obsidian
 tech_stack:

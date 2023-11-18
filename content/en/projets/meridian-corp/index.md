@@ -1,8 +1,8 @@
 ---
 title: Meridian Corp
 seo_title: Meridian Corp
-summary: L'équilibre c'est se sentir à sa place
-description: Meridian Corp est un projet de communauté en développement
+summary: Balance is finding it's place
+description: Meridian Corp is a project of community growing stronger each day !
 slug: meridian-corp
 date: 2023-07-20T08:52:30.000Z
 feature_image: Meridian_Logo_2bis.png

@@ -168,7 +168,13 @@ theme = 'liftoff'
     languageName = 'Français'
     weight = 1
     [languages.fr.params]
-      subtitle = 'Reference, tutoriels et explications'
+      screeenshotTitle = "Les screens de l'équipe"
+      contact_name = "Votre nom..."
+      contact_email = "Votre meilleur e-mail..."
+      contact_placeholder = "Votre petit mot..."
+      button_send = "Envoyer"
+      next_article = 'Prochain article'
+      content_table = "Table de contenu"
   [languages.en]
     contentDir = 'content/en'
     disabled = false
@@ -177,7 +183,13 @@ theme = 'liftoff'
     languageName = 'English'
     weight = 2
     [languages.en.params]
-      subtitle = 'Reference, Tutorials, and Explanations'
+      screeenshotTitle = "Screenshots from the team"
+      contact_name = "Your name..."
+      contact_email = "Your best email..."
+      contact_placeholder = "Your lovely note..."
+      button_send = "Send"
+      next_article = 'Next article'
+      content_table = "Content Table"
 ### Hugo Pipes
 [minify]
   disableCSS = false

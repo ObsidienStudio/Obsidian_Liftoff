@@ -7,10 +7,10 @@
 <div class="contact">
   <div class="single-container markdown">{{ .Content }}</div>
   <form id="contact-form" class="single-container" name="contact" method="POST">
-    <input type="text" class="contact-form--input" name="name" placeholder="Votre nom..." title="Votre nom" required>
-    <input type="email" class="contact-form--input" name="email" placeholder="Votre email favori..." title="Votre email favori" required>
-    <textarea class="contact-form--textarea" name="message" placeholder="Votre petit mot..." title="Votre petit mot" required></textarea>
-    <button type="submit" id="contact-form--submit" class="btn-primary">Envoyer</button>
+    <input type="text" class="contact-form--input" name="name" placeholder="{{.Site.Params.contact_name}}" title="Votre nom" required>
+    <input type="email" class="contact-form--input" name="email" placeholder="{{.Site.Params.contact_email}}" title="Votre email favori" required>
+    <textarea class="contact-form--textarea" name="message" placeholder="{{.Site.Params.contact_placeholder}}" title="Votre petit mot" required></textarea>
+    <button type="submit" id="contact-form--submit" class="btn-primary">{{.Site.Params.button_send}}</button>
   </form>
 </div>
 {{ end }}

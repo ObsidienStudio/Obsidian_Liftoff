@@ -1,8 +1,8 @@
 ---
 title: Dofus
 seo_title: Dofus
-summary: Dofus est Notre MMO favori. Rejoins donc la guilde !
-description: Le post résumant la guilde dofus
+summary: Dofus is our star MMO, come and join the guild !
+description: Meridian c'est l'histoire d'une guilde...
 slug: dofus
 feature_image: screenshot.png
 date: 1970-01-01T00:00:00.000Z
