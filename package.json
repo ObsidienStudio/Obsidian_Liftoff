@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ObsidienStudio/Obsidian_Liftoff.git"
+    "url": "git+https://git.meridian-corp.org/obsidian/Website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ObsidienStudio/Obsidian_Liftoff/issues"
+    "url": "https://git.meridian-corp.org/obsidian/Website/issues"
   },
-  "homepage": "https://github.com/ObsidienStudio/Obsidian_Liftoff#readme",
+  "homepage": "https://git.meridian-corp.org.com/obsidian/Website#readme",
   "dependencies": {
     "tinacms": "^1.5.21"
   },
